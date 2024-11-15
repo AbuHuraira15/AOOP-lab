@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginpage.UserFrameController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="47.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" layoutY="-0.6666666666666666" prefHeight="48.0" prefWidth="209.0" style="-fx-background-color: #308ab8;" styleClass="sidebar-logo-text" stylesheets="@CssColorForRegistration/dashboard1.css" text="our society" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="-1.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="217.33333333333334" layoutY="8.0" prefHeight="27.0" prefWidth="91.0" styleClass="dashboard" stylesheets="@cssColors/AncorpaneBc.css" text="Dashboard" AnchorPane.leftAnchor="217.0" AnchorPane.topAnchor="8.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Circle fill="#10ac44" layoutX="1075.6666666666667" layoutY="26.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.rightAnchor="19.333333333333258" />
+                        <Label layoutX="1002.6666666666666" layoutY="16.0" prefHeight="17.0" prefWidth="80.0" text="Active status" AnchorPane.rightAnchor="26.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="dateLabel" layoutX="863.6666666666666" layoutY="12.0" prefHeight="20.0" prefWidth="90.0" styleClass="date-label" stylesheets="@CssColorForRegistration/TimeAndDateLabelcolor.css" text="DD/MM/YY" AnchorPane.bottomAnchor="9.333333333333336" AnchorPane.rightAnchor="146.33333333333337" AnchorPane.topAnchor="12.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Line endX="-100.00001525878906" endY="20.333330154418945" layoutX="314.0" layoutY="11.0" startX="-100.0" stroke="#033833" />
+                        <Label fx:id="timeLabel" alignment="CENTER" layoutX="709.3333333333334" layoutY="12.0" prefHeight="25.0" prefWidth="109.0" styleClass="time-label" stylesheets="@CssColorForRegistration/TimeAndDateLabelcolor.css" text="Time" AnchorPane.rightAnchor="281.33333333333326">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="676.3333333333334" layoutY="9.333333333333334" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="12.333333333333329" AnchorPane.rightAnchor="398.66666666666663" AnchorPane.topAnchor="9.333333333333334">
+                           <image>
+                              <Image url="@../../../UnitedAreaPhotos/time.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="22.0" layoutX="825.6666666666666" layoutY="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="252.33333333333337">
+                           <image>
+                              <Image url="@../../../UnitedAreaPhotos/calendar.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Imagevoew_from_dashboard" fitHeight="36.0" fitWidth="38.0" layoutX="951.0" layoutY="8.0" pickOnBounds="true" AnchorPane.bottomAnchor="2.6666666666666643" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="8.0">
+                           <image>
+                              <Image url="@../../../photo_2024-10-27_18-36-19.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="refreshBalanceButton" layoutX="323.0" layoutY="8.0" mnemonicParsing="false" onAction="#refreshBalance" prefHeight="26.0" prefWidth="77.0" text="Refresh" />
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="560.0" prefWidth="210.0" styleClass="sidebar" stylesheets="@CssColorForRegistration/dashboard1.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="imageviewfrom_info" fitHeight="98.0" fitWidth="103.0" layoutX="43.0" layoutY="8.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../Admin.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="30.0" layoutY="113.0" prefHeight="20.0" prefWidth="76.0" stylesheets="@CssColorForRegistration/progressbar.css" text="User Id     : " />
+                        <Label fx:id="userAccId" layoutX="110.0" layoutY="109.0" styleClass="sidebar-logo-text" stylesheets="@CssColorForRegistration/dashboard1.css" text="1111" textFill="#333333">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="29.0" layoutY="143.0" stylesheets="@CssColorForRegistration/progressbar.css" text="Username :" />
+                        <Label fx:id="Username" layoutX="111.0" layoutY="139.0" prefHeight="27.0" prefWidth="88.0" stylesheets="@CssColorForRegistration/dashboard1.css" text="user">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="value" />
+                              <String fx:value="sidebar-logo-text" />
+                           </styleClass>
+                        </Label>
+                        <Line endX="100.0" layoutX="105.0" layoutY="181.0" startX="-100.0" />
+                        <Label layoutX="68.0" layoutY="189.0" text="Features" />
+                        <Button fx:id="DashBoard_Admin" layoutX="46.333333333333336" layoutY="223.33333333333334" mnemonicParsing="false" onAction="#DashBoardButtonClickOnAction" prefHeight="40.0" prefWidth="141.0" styleClass="sidebar-button" stylesheets="@CssColorForRegistration/dashboard1.css" text="Dashboard" AnchorPane.leftAnchor="46.333333333333336" AnchorPane.rightAnchor="24.333333333333343" AnchorPane.topAnchor="223.33333333333334" />
+                        <Button fx:id="Payments" layoutX="46.333333333333336" layoutY="273.0" mnemonicParsing="false" onAction="#PaymentsActionButton" prefHeight="40.0" prefWidth="141.0" styleClass="sidebar-button" stylesheets="@CssColorForRegistration/dashboard1.css" text="Payments" AnchorPane.leftAnchor="46.333333333333336" AnchorPane.rightAnchor="32.33333333333334" />
+                        <Button layoutX="47.0" layoutY="320.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="141.0" styleClass="sidebar-button" stylesheets="@CssColorForRegistration/dashboard1.css" text="Events" />
+                        <Button fx:id="ChatButton" layoutX="47.0" layoutY="360.0" mnemonicParsing="false" onAction="#ChatButtonOnAction" prefHeight="40.0" prefWidth="141.0" styleClass="sidebar-button" stylesheets="@CssColorForRegistration/dashboard1.css" text="Chat" />
+                        <Button layoutX="47.0" layoutY="400.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="141.0" styleClass="sidebar-button" stylesheets="@CssColorForRegistration/dashboard1.css" text="Buy" />
+                        <Button fx:id="My_ShopButton" layoutX="47.0" layoutY="440.0" mnemonicParsing="false" onAction="#MyshopActionOnbutton" prefHeight="40.0" prefWidth="141.0" styleClass="sidebar-button" stylesheets="@CssColorForRegistration/dashboard1.css" text="My Shop" />
+                        <Button fx:id="profilesettingsButton" layoutX="47.0" layoutY="480.0" mnemonicParsing="false" onAction="#profilesettingsClickButtonOnAction" prefHeight="40.0" prefWidth="141.0" styleClass="sidebar-button" stylesheets="@CssColorForRegistration/dashboard1.css" text="Profile settings" AnchorPane.leftAnchor="47.0" />
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane fx:id="childPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="showMembersAnchorpane" layoutX="12.0" layoutY="10.0" prefHeight="161.0" prefWidth="876.0" styleClass="AMancorpaneWhitebg" stylesheets="@cssColors/AncorpaneBc.css" visible="false" AnchorPane.leftAnchor="11.333333333333371" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <ScrollPane hbarPolicy="NEVER" layoutX="1.0" layoutY="1.0" prefHeight="161.33333333333334" prefWidth="878.6666666666666" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <content>
+                                    <AnchorPane prefHeight="157.0" prefWidth="939.0">
+                                       <children>
+                                          <AnchorPane layoutX="26.0" layoutY="15.0" prefHeight="116.0" prefWidth="186.0" styleClass="anchor-pane" stylesheets="@cssColors/AncorpaneBc.css">
+                                             <children>
+                                                <ImageView fitHeight="55.0" fitWidth="57.0" layoutX="12.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../SocietyPeople.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label fx:id="TotalMamberLebel" alignment="CENTER" layoutX="123.0" layoutY="12.0" prefHeight="34.0" prefWidth="46.0" styleClass="label1" stylesheets="@cssColors/AncorpaneBc.css" text="0" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="label1" layoutX="83.0" layoutY="59.0" prefHeight="29.0" prefWidth="91.0" text="Total Member" textFill="#fdfdfd">
+                                                   <font>
+                                                      <Font name="Bell MT Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="264.0" layoutY="16.0" prefHeight="116.0" prefWidth="186.0" styleClass="anchor-pane" stylesheets="@cssColors/AncorpaneBc.css">
+                                             <children>
+                                                <ImageView fitHeight="55.0" fitWidth="57.0" layoutX="12.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../SocietyPeople.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label alignment="CENTER_RIGHT" layoutX="114.0" layoutY="12.0" prefHeight="34.0" prefWidth="55.0" styleClass="label1" stylesheets="@cssColors/AncorpaneBc.css" text="0" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="label111" layoutX="83.0" layoutY="60.0" prefHeight="29.0" prefWidth="91.0" text="Active member" textFill="#fdfdfd">
+                                                   <font>
+                                                      <Font name="Bell MT Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="511.0" layoutY="15.0" prefHeight="116.0" prefWidth="186.0" styleClass="anchor-pane" stylesheets="@cssColors/AncorpaneBc.css">
+                                             <children>
+                                                <Label fx:id="balanceLabel" alignment="TOP_RIGHT" layoutX="28.0" layoutY="14.0" prefHeight="34.0" prefWidth="144.0" styleClass="label1" stylesheets="@cssColors/AncorpaneBc.css" text="0" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="label11" layoutX="83.0" layoutY="60.0" prefHeight="29.0" prefWidth="91.0" text="Current Balance" textFill="#fdfdfd">
+                                                   <font>
+                                                      <Font name="Bell MT Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="55.0" fitWidth="57.0" layoutX="13.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="742.0" layoutY="15.0" prefHeight="116.0" prefWidth="186.0" styleClass="anchor-pane" stylesheets="@cssColors/AncorpaneBc.css">
+                                             <children>
+                                                <ImageView fitHeight="55.0" fitWidth="57.0" layoutX="12.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../worker.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label alignment="CENTER_RIGHT" layoutX="109.0" layoutY="12.0" prefHeight="34.0" prefWidth="60.0" styleClass="label1" stylesheets="@cssColors/AncorpaneBc.css" text="0" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="label1111" layoutX="83.0" layoutY="60.0" prefHeight="29.0" prefWidth="91.0" text="Active staff" textFill="#fdfdfd">
+                                                   <font>
+                                                      <Font name="Bell MT Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="profileSettingsAnchorpane" layoutX="2.0" layoutY="1.0" prefHeight="551.0" prefWidth="887.0" visible="false" AnchorPane.bottomAnchor="-1.1368683772161603E-13" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.6666666666666288" AnchorPane.topAnchor="1.0">
+                           <children>
+                              <AnchorPane fx:id="Update_Residential_Information" layoutX="-0.9999999999998863" layoutY="1.3333333333333333" prefHeight="549.0" prefWidth="540.0" styleClass="AMancorpaneWhitebg" stylesheets="@cssColors/AncorpaneBc.css" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="-0.9999999999998863" AnchorPane.topAnchor="1.0">
+                                 <children>
+                                    <Label layoutX="130.0" layoutY="14.0" prefHeight="38.0" prefWidth="207.0" text="Change profile information" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="202.0" AnchorPane.topAnchor="14.0">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="33.666666666666664" layoutY="90.0" text="Firstname  : " AnchorPane.leftAnchor="33.666666666666664" AnchorPane.rightAnchor="427.0">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="277.0" layoutY="90.0" text="Lastname  : " AnchorPane.rightAnchor="195.66666666666669" AnchorPane.topAnchor="90.0">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="31.0" layoutY="144.0" prefHeight="17.0" prefWidth="97.0" text="Father's name  : " AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="399.6666666666667" AnchorPane.topAnchor="144.0">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="Firstname_tf" layoutX="122.0" layoutY="86.0" prefHeight="25.0" prefWidth="142.0" promptText="firstname" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="276.0" AnchorPane.topAnchor="86.0" />
+                                    <TextField fx:id="lastname_tf" layoutX="387.0" layoutY="86.0" prefHeight="25.0" prefWidth="169.0" promptText="lastname" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="86.0" />
+                                    <TextField fx:id="fatersname_tf" layoutX="122.0" layoutY="140.0" prefHeight="25.0" prefWidth="143.0" promptText="father's name" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="275.0" AnchorPane.topAnchor="140.0" />
+                                    <Label layoutX="277.0" layoutY="144.0" text="Mobile  : " AnchorPane.rightAnchor="209.66666666666669" AnchorPane.topAnchor="144.0">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="mobile_tf" layoutX="387.0" layoutY="140.0" prefHeight="25.0" prefWidth="167.0" promptText="mobile" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="140.0" />
+                                    <Label layoutX="31.0" layoutY="250.0" prefHeight="17.0" prefWidth="82.0" text="Address  : " AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="427.0">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="address_tf" layoutX="122.0" layoutY="246.0" prefHeight="25.0" prefWidth="398.0" promptText="address" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="20.0" />
+                                    <Label layoutX="31.0" layoutY="302.0" prefHeight="17.0" prefWidth="68.0" text="Email  : " AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="440.3333333333333">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="email_tf" layoutX="121.0" layoutY="298.0" prefHeight="25.0" prefWidth="398.0" promptText="email" AnchorPane.leftAnchor="121.0" AnchorPane.rightAnchor="21.0" />
+                                    <Label layoutX="29.0" layoutY="355.0" prefHeight="17.0" prefWidth="88.0" text="Password  : " AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="423.0">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="password_tf" layoutX="121.0" layoutY="351.0" prefHeight="25.0" prefWidth="151.0" promptText="password" AnchorPane.leftAnchor="121.0" AnchorPane.rightAnchor="255.66666666666663" />
+                                    <Button fx:id="updatebtn" layoutX="207.0" layoutY="411.0" mnemonicParsing="false" onAction="#HandleUpdateProductOnAction" prefHeight="39.0" prefWidth="140.0" styleClass="button-update" stylesheets="@CssColorForRegistration/residentialUpdate_information.css" text="Save changes" AnchorPane.leftAnchor="207.0" AnchorPane.rightAnchor="192.66666666666663" />
+                                    <Button fx:id="CancelButton_In_UpdateInformation" layoutX="311.0" layoutY="478.0" mnemonicParsing="false" onAction="#UpdateInformation_cancelButton" styleClass="button-cancel" stylesheets="@CssColorForRegistration/residentialUpdate_information.css" text="Cancel" />
+                                    <Label layoutX="34.0" layoutY="195.0" prefHeight="17.0" prefWidth="97.0" text="Nid : ">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="fatersname_tf1" layoutX="121.0" layoutY="191.0" prefHeight="25.0" prefWidth="143.0" promptText="Nid number" />
+                                    <Label layoutX="278.0" layoutY="195.0" text="Dob :">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker layoutX="348.0" layoutY="191.0" prefHeight="25.0" prefWidth="169.0" promptText="Date of birth" />
+                                 </children>
+                              </AnchorPane>
+                              <Line endX="753.0001220703125" endY="-4.999993801116943" layoutX="129.0" layoutY="5.0" startX="-129.0" startY="-4.999993801116943" AnchorPane.bottomAnchor="550.9999999999999" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="4.833211263020871" AnchorPane.topAnchor="3.8191672047105385E-14" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="2.0" layoutY="1.0" prefHeight="552.0" prefWidth="888.0" />
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

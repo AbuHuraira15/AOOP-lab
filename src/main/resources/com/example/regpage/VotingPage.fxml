@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="482.0" prefWidth="487.0" styleClass="main-pane" stylesheets="@VotingPage.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.regpage.VotingPage">
+   <children>
+      <Label alignment="CENTER" layoutX="141.0" layoutY="9.0" prefHeight="34.0" prefWidth="171.0" styleClass="title-label" stylesheets="@VotingPage.css" text="Voting for event">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="51.0" prefHeight="34.0" prefWidth="94.0" styleClass="field-label" stylesheets="@VotingPage.css" text="Event name:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="89.0" prefHeight="34.0" prefWidth="94.0" styleClass="field-label" stylesheets="@VotingPage.css" text="Event Date:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="126.0" prefHeight="34.0" prefWidth="94.0" styleClass="field-label" stylesheets="@VotingPage.css" text="Event Time:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="160.0" prefHeight="34.0" prefWidth="135.0" styleClass="field-label" stylesheets="@VotingPage.css" text="Voting Start date">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="194.0" prefHeight="34.0" prefWidth="135.0" styleClass="field-label" stylesheets="@VotingPage.css" text="Voting Enddate">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="NoId" layoutX="390.0" layoutY="448.0" mnemonicParsing="false" onMouseClicked="#no" styleClass="primary-button" stylesheets="@VotingPage.css" text="No" />
+      <Rectangle fx:id="vote2" arcHeight="5.0" arcWidth="5.0" fill="#f20404" height="5.0" layoutX="383.0" layoutY="435.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" width="46.0" />
+      <Rectangle fx:id="vote1" arcHeight="5.0" arcWidth="5.0" fill="#21b435" height="5.0" layoutX="322.0" layoutY="435.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" width="46.0" />
+      <Button fx:id="YesId" layoutX="329.0" layoutY="448.0" mnemonicParsing="false" onMouseClicked="#yes" styleClass="primary-button" stylesheets="@VotingPage.css" text="Yes" />
+      <Label layoutX="246.0" layoutY="251.0" styleClass="data-label" stylesheets="@VotingPage.css" text="Voted Yse" />
+      <Label layoutX="246.0" layoutY="295.0" styleClass="data-label" stylesheets="@VotingPage.css" text="Voted No" />
+      <Label fx:id="resultYes" layoutX="246.0" layoutY="269.0" styleClass="result-label" stylesheets="@VotingPage.css" text="result" />
+      <Label fx:id="resultNo" layoutX="246.0" layoutY="313.0" styleClass="result-label" stylesheets="@VotingPage.css" text="result no" />
+      <Label layoutX="54.0" layoutY="269.0" prefHeight="34.0" prefWidth="116.0" styleClass="field-label" stylesheets="@VotingPage.css" text="Reaming time">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="timer" layoutX="54.0" layoutY="322.0" prefHeight="34.0" prefWidth="181.0" styleClass="timer-label" stylesheets="@VotingPage.css" text="timer">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="name" layoutX="224.0" layoutY="54.0" prefHeight="34.0" prefWidth="94.0" styleClass="data-label" stylesheets="@VotingPage.css" text="Event name:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" layoutX="222.0" layoutY="91.0" prefHeight="34.0" prefWidth="94.0" styleClass="data-label" stylesheets="@VotingPage.css" text="Event Date:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="time" layoutX="224.0" layoutY="126.0" prefHeight="34.0" prefWidth="94.0" styleClass="data-label" stylesheets="@VotingPage.css" text="Event Time:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="sDate" layoutX="222.0" layoutY="160.0" prefHeight="34.0" prefWidth="135.0" styleClass="data-label" stylesheets="@VotingPage.css" text="Voting Start date">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="eDate" layoutX="222.0" layoutY="194.0" prefHeight="34.0" prefWidth="135.0" styleClass="data-label" stylesheets="@VotingPage.css" text="Voting Enddate">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

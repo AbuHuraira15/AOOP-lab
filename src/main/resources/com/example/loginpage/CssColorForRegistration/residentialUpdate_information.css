@@ -1,0 +1,61 @@
+/* Styling for buttons */
+.button {
+    -fx-padding: 10 20;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial, sans-serif;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+    -fx-background-color: #f8f9fa;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 0);
+    -fx-cursor: hand;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    -fx-background-color: #e9ecef;
+    -fx-border-color: #ccc;
+}
+
+/* Focused buttons */
+.button:focused {
+    -fx-border-color: #007bff;
+    -fx-border-width: 2;
+}
+
+/* Active (pressed) state for buttons */
+.button:pressed {
+    -fx-background-color: #dee2e6;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 2, 0, 0, 0);
+}
+
+/* Specific styling for the Update button */
+.button-update {
+    -fx-text-fill: white;
+    -fx-background-color: #007bff;
+    -fx-border-color: #0056b3;
+}
+
+.button-update:hover {
+    -fx-background-color: #0056b3;
+}
+
+.button-update:pressed {
+    -fx-background-color: #003f7f;
+}
+
+/* Specific styling for the Cancel button */
+.button-cancel {
+
+    -fx-text-fill: white;
+    -fx-background-color: #ab294c;
+    -fx-border-color: #ced4da;
+}
+
+.button-cancel:hover {
+    -fx-background-color: #5c0b21;
+    -fx-border-color: #adb5bd;
+}

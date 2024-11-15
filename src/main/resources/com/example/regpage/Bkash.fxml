@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="425.0" stylesheets="@Bkash.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.regpage.Bkash">
+   <children>
+      <VBox alignment="CENTER" layoutY="-2.0" prefHeight="546.0" prefWidth="425.0" spacing="20" styleClass="root-container">
+         <children>
+            <VBox alignment="CENTER" spacing="10">
+               <children>
+                  <ImageView fx:id="bkashIcon" fitHeight="60" fitWidth="60">
+                     <image>
+                        <Image url="@../../../../java/com/example/regpage/Bkash.png" />
+                     </image>
+                  </ImageView>
+                  <Label styleClass="payment-label" text="bKash" />
+               </children>
+            </VBox>
+            <Label fx:id="wrong" />
+            <AnchorPane>
+               <children>
+                  <Label layoutX="50.0" layoutY="10.0" styleClass="input-label" text="Mobile" />
+                  <TextField fx:id="mobileNumber" layoutX="208.0" layoutY="3.0" prefWidth="164.0" promptText="Enter mobile number..." styleClass="input-field" />
+               </children>
+            </AnchorPane>
+            <AnchorPane>
+               <children>
+                  <Label layoutX="50.0" layoutY="13.0" styleClass="input-label" text="Amount" />
+                  <TextField fx:id="amount" layoutX="208.0" layoutY="6.0" prefWidth="164.0" promptText="Enter amount..." styleClass="input-field" />
+               </children>
+            </AnchorPane>
+            <AnchorPane>
+               <children>
+                  <Label layoutX="50.0" layoutY="16.0" styleClass="input-label" text="Bkash PIN" />
+                  <PasswordField fx:id="pin" layoutX="208.0" layoutY="7.0" prefWidth="164.0" promptText="Enter PIN..." styleClass="input-field" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="button" mnemonicParsing="false" onMouseClicked="#getOtp" styleClass="pay-button" text="Get opt" />
+            <AnchorPane fx:id="frame" prefHeight="101.0" prefWidth="375.0">
+               <children>
+                  <Label layoutX="61.0" layoutY="18.0" prefHeight="33.0" prefWidth="46.0" styleClass="input-label" text="OTP" />
+                  <TextField fx:id="otp" layoutX="195.0" layoutY="19.0" promptText="otp" styleClass="input-field" />
+                  <Button fx:id="payButton" layoutX="138.0" layoutY="70.0" onMouseClicked="#payment" styleClass="pay-button" text="Pay Now" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Button layoutX="16.0" layoutY="19.0" mnemonicParsing="false" onMouseClicked="#back" text="&lt;---" />
+   </children>
+</AnchorPane>

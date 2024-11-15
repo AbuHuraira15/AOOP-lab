@@ -1,0 +1,18 @@
+.stackPane {
+    -fx-border-color: #3498db; /* Blue border color */
+    -fx-border-width: 5;
+    -fx-effect: dropshadow(gaussian, #3498db, 20, 0.8, 0, 0); /* Glow effect */
+}
+
+.stackPane:hover {
+    -fx-effect: dropshadow(gaussian, #2ecc71, 30, 0.9, 0, 0); /* Glow changes on hover */
+}
+
+.myLabel {
+    -fx-font-family: "Sans-serif";
+    -fx-font-size: 18;
+    -fx-text-fill: white;
+    -fx-background-color: #34495e; /* Dark gray background */
+    -fx-padding: 10;              /* Padding around text */
+    -fx-background-radius: 5;     /* Rounded background corners */
+}

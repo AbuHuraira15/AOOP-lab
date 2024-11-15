@@ -1,0 +1,45 @@
+/* Base style for ComboBox */
+.combo-box {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: transparent; /* No border by default */
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-padding: 2px;
+    -fx-font-size: 12px;
+}
+
+/* Arrow button inside the ComboBox */
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+/* Hover effect for ComboBox */
+.combo-box:hover {
+    -fx-background-color: #e8f5e9; /* Light green background */
+    -fx-border-color: #1db954; /* Spotify green border */
+}
+
+/* Focus effect for ComboBox */
+.combo-box:focused {
+    -fx-background-color: #ffffff; /* Keep the white background */
+    -fx-border-color: #1ed760; /* Lighter green border when focused */
+}
+
+/* Popup menu (dropdown list) */
+.combo-box-popup {
+    -fx-background-color: #ffffff; /* White background for the dropdown */
+    -fx-border-color: #1db954; /* Green border for the dropdown */
+}
+
+/* Items in the dropdown menu */
+.combo-box .list-cell {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+}
+
+/* Hover effect for items in the dropdown */
+.combo-box .list-cell:hover {
+    -fx-background-color: #1db954; /* Green background for hover */
+    -fx-text-fill: white; /* White text when hovering */
+}

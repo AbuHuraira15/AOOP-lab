@@ -1,0 +1,143 @@
+/* Root Styles */
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+    -fx-padding: 20px;
+}
+
+/* Card Container */
+.card {
+    -fx-background-color: white;
+    -fx-padding: 30px;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 20, 0, 0, 10);
+}
+
+/* Header Styles */
+.header {
+    -fx-padding: 0 0 20px 0;
+    -fx-border-color: transparent transparent #f0f0f0 transparent;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2d3436;
+}
+
+.balance-text {
+    -fx-font-size: 16px;
+    -fx-fill: #636e72;
+}
+
+/* Form Styles */
+.form-container {
+    -fx-padding: 10px 0;
+}
+
+.input-group {
+    -fx-spacing: 8px;
+}
+
+.input-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #2d3436;
+    -fx-font-weight: bold;
+}
+
+.input-field {
+    -fx-pref-height: 40px;
+    -fx-background-color: #f8f9fa;
+    -fx-background-radius: 8px;
+    -fx-border-color: #e9ecef;
+    -fx-border-radius: 8px;
+    -fx-padding: 0 15px;
+    -fx-font-size: 14px;
+}
+
+.input-field:focused {
+    -fx-background-color: white;
+    -fx-border-color: #00b894;
+    -fx-border-width: 2px;
+}
+
+/* Amount Field Specific Styles */
+.amount-container {
+    -fx-spacing: 5;
+    -fx-background-color: #f8f9fa;
+    -fx-background-radius: 8px;
+    -fx-border-color: #e9ecef;
+    -fx-border-radius: 8px;
+    -fx-padding: 0 15px;
+}
+
+.currency-symbol {
+    -fx-font-size: 16px;
+    -fx-text-fill: #2d3436;
+    -fx-font-weight: bold;
+}
+
+.amount-field {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0 5px;
+}
+
+/* Submit Button */
+.submit-button {
+    -fx-background-color: #00b894;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 0;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-max-width: infinity;
+}
+
+.submit-button:hover {
+    -fx-background-color: #00a387;
+}
+
+.submit-button:pressed {
+    -fx-background-color: #009376;
+}
+
+/* Error Label */
+.error-label {
+    -fx-text-fill: #d63031;
+    -fx-font-size: 14px;
+    -fx-padding: 5px 0;
+    -fx-font-weight: bold;
+}
+
+/* Limit Notice */
+.limit-notice {
+    -fx-font-size: 12px;
+    -fx-fill: #636e72;
+    -fx-text-alignment: center;
+}
+
+/* Icon Styles */
+#withdrawIcon {
+    -fx-opacity: 0.9;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .card {
+        -fx-padding: 20px;
+    }
+
+    .title {
+        -fx-font-size: 24px;
+    }
+
+    .input-field {
+        -fx-pref-height: 35px;
+    }
+
+    .submit-button {
+        -fx-padding: 10px 0;
+    }
+}

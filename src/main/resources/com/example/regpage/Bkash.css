@@ -1,0 +1,64 @@
+/* Root Container */
+.root-container {
+    -fx-background-color: #f5f5f5; /* Light background */
+    -fx-padding: 20;
+    -fx-spacing: 20;
+}
+
+/* bKash Icon */
+.bkash-icon {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.5, 0, 1);
+}
+
+/* bKash Label */
+.bkash-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #E30613; /* bKash pink */
+    -fx-padding: 10 0 0 0;
+}
+
+/* Input Labels */
+.input-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333; /* Dark gray */
+}
+
+/* Input Fields */
+.input-field {
+    -fx-font-size: 14px;
+    -fx-padding: 5 10;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-color: #ffffff;
+}
+
+/* Input Field Focus Effect */
+.input-field:focused {
+    -fx-border-color: #E30613; /* bKash pink focus */
+    -fx-border-width: 2px;
+}
+
+/* Pay Button */
+.pay-button {
+    -fx-background-color: #E30613; /* bKash pink */
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+/* Pay Button Hover Effect */
+.pay-button:hover {
+    -fx-background-color: #c20410; /* Darker pink */
+}
+
+/* Pay Button Pressed Effect */
+.pay-button:pressed {
+    -fx-background-color: #a2030e; /* Even darker pink */
+}

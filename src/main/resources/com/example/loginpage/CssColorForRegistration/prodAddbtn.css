@@ -1,0 +1,19 @@
+.button {
+    -fx-background-color: #4CAF50; /* Default background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 12px; /* Font size */
+    -fx-border-radius: 5px;
+    -fx-background-radius: 3px;
+    -fx-padding: 5px 10px;
+    -fx-cursor: hand; /* Change mouse pointer to hand when over the button */
+}
+
+/* Hover effect */
+.button:hover {
+    -fx-background-color: #45a049; /* Slightly darker green */
+}
+
+/* Active (pressed) state */
+.button:pressed {
+    -fx-background-color: #3e8e41; /* Even darker green */
+}

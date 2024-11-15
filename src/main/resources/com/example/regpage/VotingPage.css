@@ -1,0 +1,52 @@
+.main-pane {
+    -fx-background-color: linear-gradient(to bottom, #3b5998, #192f6a);
+    -fx-padding: 20;
+}
+
+.title-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 4, 0.5, 1, 1);
+}
+
+.field-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e0e0e0;
+}
+
+.data-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #ffffff;
+}
+
+.timer-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffd700;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 4, 0.5, 1, 1);
+}
+
+.result-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.primary-button {
+    -fx-background-color: #3b5998;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 5 15;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 4, 0.5, 1, 1);
+}
+
+.primary-button:hover {
+    -fx-background-color: #4c70ba;
+}
+
+.primary-button:pressed {
+    -fx-background-color: #2a4887;
+}

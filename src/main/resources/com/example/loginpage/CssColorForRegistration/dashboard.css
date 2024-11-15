@@ -1,0 +1,252 @@
+/* Sidebar Container *//*
+
+.sidebar {
+    -fx-background-color: linear-gradient(to bottom, #f39c12, #d35400); */
+/* Orange gradient *//*
+
+    //-fx-min-width: 25px;
+    //-fx-padding: 20;
+    //-fx-spacing: 20;
+    //-fx-alignment: top-left;
+}
+
+*/
+/* Logo Section *//*
+
+.sidebar-logo {
+    -fx-alignment: center-left;
+    -fx-spacing: 10;
+}
+
+.sidebar-logo-icon {
+    -fx-min-width: 40;
+    -fx-min-height: 40;
+    -fx-background-color: white;
+    -fx-background-radius: 50%;
+}
+
+.sidebar-logo-text {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+*/
+/* Section Headers *//*
+
+.sidebar-section {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffe6cc; */
+/* Light orange *//*
+
+    -fx-padding: 10 0 5 0;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #e67e22; */
+/* Darker orange for borders *//*
+
+}
+
+*/
+/* Navigation Buttons *//*
+
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+    -fx-alignment: center-left;
+    -fx-cursor: hand;
+    -fx-spacing: 10;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: rgba(255, 165, 0, 0.2); */
+/* Transparent orange hover effect *//*
+
+}
+
+.sidebar-icon {
+    -fx-min-width: 20;
+    -fx-min-height: 20;
+    -fx-background-color: white;
+    -fx-background-radius: 50%;
+}
+
+*/
+/* Active Button *//*
+
+.sidebar-button-active {
+    -fx-background-color: rgba(255, 165, 0, 0.3); */
+/* Slightly darker orange *//*
+
+    -fx-text-fill: #ffffff;
+}
+
+*/
+/* Footer Section *//*
+
+.sidebar-footer {
+    -fx-text-fill: #ffe6cc; */
+/* Light orange for footer text *//*
+
+    -fx-font-size: 12;
+    -fx-alignment: center;
+    -fx-padding: 10 0 0 0;
+}
+*/
+
+
+ /*
+.sidebar {
+    -fx-background-color: linear-gradient(to bottom, #ff914d, #d87639); *//* Muted orange gradient *//*
+    //-fx-min-width: 25px;
+    //-fx-padding: 20;
+    //-fx-spacing: 20;
+    //-fx-alignment: top-left;
+}
+
+*//* Logo Section *//*
+.sidebar-logo {
+    -fx-alignment: center-left;
+    -fx-spacing: 10;
+}
+
+.sidebar-logo-icon {
+    -fx-min-width: 40;
+    -fx-min-height: 40;
+    -fx-background-color: #ffffff; *//* Neutral white *//*
+    -fx-background-radius: 50%;
+}
+
+.sidebar-logo-text {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff; *//* White for professional contrast *//*
+}
+
+*//* Section Headers *//*
+.sidebar-section {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f7d3b2; *//* Light muted orange *//*
+    -fx-padding: 10 0 5 0;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #e0743b; *//* Darker muted orange *//*
+}
+
+*//* Navigation Buttons *//*
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff; *//* White for text *//*
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+    -fx-alignment: center-left;
+    -fx-cursor: hand;
+    -fx-spacing: 10;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: rgba(255, 143, 71, 0.2); *//* Subtle orange hover effect *//*
+}
+
+.sidebar-icon {
+    -fx-min-width: 20;
+    -fx-min-height: 20;
+    -fx-background-color: #ffffff; *//* White for icons *//*
+    -fx-background-radius: 50%;
+}
+
+*//* Active Button *//*
+.sidebar-button-active {
+    -fx-background-color: rgba(255, 143, 71, 0.3); *//* Slightly darker muted orange *//*
+    -fx-text-fill: #ffffff; *//* White text *//*
+}
+
+*//* Footer Section *//*
+.sidebar-footer {
+    -fx-text-fill: #f7d3b2; *//* Light muted orange for footer text *//*
+    -fx-font-size: 12;
+    -fx-alignment: center;
+    -fx-padding: 10 0 0 0;
+}
+*/
+/* Sidebar Container */
+.sidebar {
+    -fx-background-color: linear-gradient(to bottom, #4a90e2, #1c60a3); /* Muted blue gradient */
+    //-fx-min-width: 25px;
+    //-fx-padding: 20;
+    //-fx-spacing: 20;
+    //-fx-alignment: top-left;
+}
+
+/* Logo Section */
+.sidebar-logo {
+    -fx-alignment: center-left;
+    -fx-spacing: 10;
+}
+
+.sidebar-logo-icon {
+    -fx-min-width: 40;
+    -fx-min-height: 40;
+    -fx-background-color: #ffffff; /* Neutral white for logo */
+    -fx-background-radius: 50%;
+}
+
+.sidebar-logo-text {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff; /* White for professional contrast */
+}
+
+/* Section Headers */
+.sidebar-section {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-text-fill: #d1e4f7; /* Light muted blue */
+    -fx-padding: 10 0 5 0;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #357abd; /* Darker muted blue for borders */
+}
+
+/* Navigation Buttons */
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff; /* White for text */
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+    -fx-alignment: center-left;
+    -fx-cursor: hand;
+    -fx-spacing: 10;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: rgba(74, 144, 226, 0.2); /* Subtle blue hover effect */
+}
+
+.sidebar-icon {
+    -fx-min-width: 20;
+    -fx-min-height: 20;
+    -fx-background-color: #ffffff; /* White for icons */
+    -fx-background-radius: 50%;
+}
+
+/* Active Button */
+.sidebar-button-active {
+    -fx-background-color: rgba(74, 144, 226, 0.3); /* Slightly darker muted blue */
+    -fx-text-fill: #ffffff; /* White text */
+}
+
+/* Footer Section */
+.sidebar-footer {
+    -fx-text-fill: #d1e4f7; /* Light muted blue for footer text */
+    -fx-font-size: 12;
+    -fx-alignment: center;
+    -fx-padding: 10 0 0 0;
+}

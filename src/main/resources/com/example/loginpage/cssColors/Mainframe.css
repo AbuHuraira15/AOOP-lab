@@ -1,0 +1,16 @@
+.button {
+    -fx-background-color:  #126e55; /* Soft green */
+        -fx-text-fill: white;          /* White text for contrast */
+        -fx-border-color: #007b5e;     /* Match nav bar border */
+        -fx-border-width: 2px;
+        -fx-background-radius: 5;
+        -fx-border-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #007b5e;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #007b5e;
+}
+
+

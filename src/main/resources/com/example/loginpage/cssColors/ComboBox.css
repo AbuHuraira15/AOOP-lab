@@ -1,0 +1,35 @@
+.combo-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 4px;
+    -fx-padding: 4px;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, transparent, 0, 0, 0, 0);
+    -fx-background-insets: 0;
+}
+
+/* Hover effect */
+.combo-box:hover {
+    -fx-border-color: #0078d7;
+    -fx-effect: dropshadow(gaussian, rgba(0, 120, 215, 0.5), 4, 0, 0, 0);
+}
+
+/* Pressed (focused) effect */
+.combo-box:focused {
+    -fx-border-color: #005a9e;
+    -fx-effect: dropshadow(gaussian, rgba(0, 90, 158, 0.5), 4, 0, 0, 0);
+}
+
+/* Dropdown list styling */
+.combo-box-popup {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 4px;
+    -fx-font-size: 14px;
+}
+
+/* Dropdown item hover effect */
+.combo-box .list-cell:hover {
+    -fx-background-color: #f0f8ff;
+    -fx-text-fill: #333333;
+}

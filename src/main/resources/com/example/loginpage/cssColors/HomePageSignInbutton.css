@@ -1,0 +1,23 @@
+/* CSS for the Sign In Button in JavaFX */
+.signinButton {
+    -fx-background-color: #f4f4f4; /* Light gray background */
+    -fx-border-color: #cccccc; /* Gray border */
+    -fx-border-radius: 5; /* Rounded corners for border */
+    -fx-background-radius: 5; /* Rounded corners for background */
+    -fx-padding: 5 10; /* Spacing: top/bottom, left/right */
+    -fx-font-size: 14px; /* Font size */
+    -fx-text-fill: #333333; /* Dark text color */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+    -fx-effect: dropshadow(gaussian, transparent, 0, 0, 0, 0); /* No shadow by default */
+    -fx-transition: 0.3s; /* Smooth transitions */
+}
+
+.signinButton:hover {
+    -fx-background-color: #e6e6e6; /* Slightly darker gray on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0, 0, 2); /* Subtle shadow on hover */
+}
+
+.signinButton:pressed {
+    -fx-background-color: #d9d9d9; /* Even darker gray when clicked */
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0, 0, 2); /* Inner shadow when pressed */
+}

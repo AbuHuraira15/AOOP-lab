@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="702.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.regpage.RegistrationFrom">
+   <children>
+      <Label layoutX="82.0" layoutY="150.0" prefHeight="42.0" prefWidth="124.0" text="First name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="184.0" layoutY="14.0" prefHeight="55.0" prefWidth="304.0" text="Smart society  registration from">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstName" layoutX="255.0" layoutY="158.0" prefHeight="26.0" prefWidth="222.0" promptText="Enter first name" />
+      <Label layoutX="82.0" layoutY="192.0" prefHeight="42.0" prefWidth="124.0" text="Last name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lastName" layoutX="255.0" layoutY="200.0" prefHeight="26.0" prefWidth="222.0" promptText="Entetr last name" />
+      <Label layoutX="82.0" layoutY="234.0" prefHeight="42.0" prefWidth="124.0" text="Father name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fatherName" layoutX="255.0" layoutY="242.0" prefHeight="26.0" prefWidth="222.0" promptText="Enter Father name" />
+      <Label layoutX="82.0" layoutY="276.0" prefHeight="42.0" prefWidth="124.0" text="NID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nid" layoutX="255.0" layoutY="284.0" prefHeight="26.0" prefWidth="222.0" promptText="Enter Nid number" />
+      <Label layoutX="82.0" layoutY="310.0" prefHeight="42.0" prefWidth="124.0" text="Phone Number">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mobileNumber" layoutX="255.0" layoutY="318.0" prefHeight="26.0" prefWidth="222.0" promptText="Mobile number" />
+      <Label layoutX="82.0" layoutY="344.0" prefHeight="42.0" prefWidth="124.0" text="Email address">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailAddress" layoutX="255.0" layoutY="352.0" prefHeight="26.0" prefWidth="222.0" promptText="Emai address" />
+      <Label layoutX="82.0" layoutY="385.0" prefHeight="42.0" prefWidth="124.0" text="Date of Birth">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateOfBirth" layoutX="255.0" layoutY="393.0" promptText="mm/dd/yyyy" />
+      <Label layoutX="82.0" layoutY="427.0" prefHeight="42.0" prefWidth="124.0" text="Address">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="address" layoutX="255.0" layoutY="423.0" prefHeight="50.0" prefWidth="298.0" />
+      <Label layoutX="76.0" layoutY="473.0" prefHeight="42.0" prefWidth="124.0" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pass" layoutX="255.0" layoutY="481.0" prefHeight="26.0" prefWidth="211.0" promptText="password" />
+      <Label layoutX="76.0" layoutY="507.0" prefHeight="42.0" prefWidth="151.0" text="Confrom Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="confirmPass" layoutX="255.0" layoutY="515.0" prefHeight="26.0" prefWidth="211.0" promptText="Confrom password" />
+      <Button layoutX="255.0" layoutY="560.0" mnemonicParsing="false" onMouseClicked="#registration" prefHeight="26.0" prefWidth="108.0" text="Registration" />
+      <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="175.0" layoutX="502.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../java/org/example/regpage/blankPhoto.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="544.0" layoutY="255.0" mnemonicParsing="false" onMouseClicked="#setImage" text="Set Image" />
+      <Label layoutX="533.0" layoutY="200.0" prefHeight="18.0" prefWidth="99.0" text="image file &lt;65kb" />
+      <Label layoutX="529.0" layoutY="217.0" prefHeight="18.0" prefWidth="108.0" text="image size 300X300" />
+      <Label fx:id="wrong" alignment="CENTER" layoutX="202.0" layoutY="98.0" prefHeight="35.0" prefWidth="252.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="otpButton" layoutX="488.0" layoutY="629.0" mnemonicParsing="false" onMouseClicked="#OtpChecker" text="Registared now" />
+      <Label fx:id="otp" layoutX="76.0" layoutY="620.0" prefHeight="42.0" prefWidth="124.0" text="OTP from email">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="getOtp" layoutX="249.0" layoutY="628.0" prefHeight="35.0" prefWidth="175.0" promptText="OTP" />
+      <Label layoutX="551.0" layoutY="233.0" text="image.png" />
+   </children>
+</AnchorPane>

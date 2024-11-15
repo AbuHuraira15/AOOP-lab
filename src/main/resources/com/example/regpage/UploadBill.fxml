@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0" prefWidth="532.0" stylesheets="@Bill.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.regpage.UploadBill">
+   <children>
+      <VBox layoutX="3.0" layoutY="-4.0" prefHeight="734.0" prefWidth="532.0" spacing="20" styleClass="content-box">
+         <children>
+            <AnchorPane prefHeight="96.0" prefWidth="462.0">
+               <children>
+                  <ImageView fx:id="imageView" fitHeight="104.0" fitWidth="132.0" layoutX="166.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../java/com/example/regpage/Photo/Utility.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="98.0" styleClass="field-label" text="Input user bill">
+               <VBox.margin>
+                  <Insets left="200.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="46.0" prefWidth="464.0" spacing="10" styleClass="input-group">
+               <children>
+                  <Label styleClass="field-label" text="Enter User ID:">
+                     <HBox.margin>
+                        <Insets bottom="5.0" right="5.0" top="7.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="inputUseId" promptText="Enter user ID..." styleClass="text-field" />
+                  <Button onMouseClicked="#load" styleClass="action-button" text="Load">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Label fx:id="wrong" prefHeight="37.0" prefWidth="123.0" textFill="#d91414" />
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </HBox>
+            <AnchorPane prefHeight="35.0" prefWidth="462.0">
+               <children>
+                  <Label layoutX="44.0" prefHeight="34.0" prefWidth="58.0" styleClass="field-label" text="Name" />
+                  <Label fx:id="name" layoutX="159.0" prefHeight="34.0" prefWidth="301.0" styleClass="field-label" />
+               </children>
+            </AnchorPane>
+            <GridPane fx:id="loadPage" hgap="10" prefHeight="333.0" prefWidth="461.0" vgap="15">
+               <columnConstraints>
+                  <ColumnConstraints minWidth="150" prefWidth="200" />
+                  <ColumnConstraints minWidth="200" prefWidth="250" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+               <children>
+                  <Label styleClass="field-label" text="Home Rent" GridPane.rowIndex="1" />
+                  <TextField fx:id="homeRent" promptText="Enter home rent..." styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label styleClass="field-label" text="Gas Bill" GridPane.rowIndex="2" />
+                  <TextField fx:id="gasBill" promptText="Enter gas bill..." styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label styleClass="field-label" text="Electricity Bill" GridPane.rowIndex="3" />
+                  <TextField fx:id="EcBill" promptText="Enter electricity bill..." styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label styleClass="field-label" text="WiFi Bill" GridPane.rowIndex="4" />
+                  <TextField fx:id="wifiBill" promptText="Enter WiFi bill..." styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label styleClass="field-label" text="Helping Hand Bill" GridPane.rowIndex="5" />
+                  <TextField fx:id="helpingHandBill" promptText="Enter helping hand bill..." styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label styleClass="field-label" text="Utility Bill" GridPane.rowIndex="6" />
+                  <TextField fx:id="utilityBill" promptText="Enter utility bill..." styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label styleClass="field-label" text="Bill month" />
+                  <DatePicker fx:id="billMonth" promptText="Enter bill month...." GridPane.columnIndex="1" />
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </GridPane>
+            <Button fx:id="button" onMouseClicked="#saveChange" styleClass="submit-button" text="Save Changes">
+               <VBox.margin>
+                  <Insets left="180.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

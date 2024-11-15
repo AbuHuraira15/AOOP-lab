@@ -1,0 +1,11 @@
+.threedotbutton:hover {
+             /* Optional: Rounded border */
+    -fx-text-fill: green;           /* White dots on hover */
+}
+.threedotbutton {
+    -fx-background-color: transparent; /* No background */
+    -fx-text-fill: #3ab0b0;              /* Blue dots */
+    -fx-font-size: 14px;              /* Adjust size of dots */
+    -fx-border-color: transparent;   /* No border by default */
+    -fx-padding: 5;                  /* Add some padding around the button */
+}

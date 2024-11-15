@@ -1,0 +1,89 @@
+.usernameTextField{
+-fx-background-color:transparenet;
+-fx-text-inner-color:#1e0202e8;
+-fx-border-color:#f60a0a;
+-fx-border-width:0px 0px 4px 0px;
+}
+
+.usernameTextField{
+    -fx-border-color: #fb6363;
+    -fx-border-width: 0px 0px 1px 0px;
+}
+/*
+
+.loginButton {
+    -fx-background-color: linear-gradient(to bottom, #4CAF50, #2E7D32);
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 4);
+    -fx-cursor: hand;
+    -fx-border-radius: 10;
+    -fx-border-color: #388E3C;
+    -fx-border-width: 1;
+}
+
+.loginButton:hover {
+    -fx-background-color: linear-gradient(to bottom, #66BB6A, #388E3C);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 12, 0, 0, 6);
+
+}
+
+
+.loginButton:pressed {
+    -fx-background-color: linear-gradient(to bottom, #388E3C, #2E7D32);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 8, 0, 0, 3);
+}
+*/
+
+.registerButton {
+    -fx-background-color: linear-gradient(to bottom, #FF8A65, #D84315);
+    -fx-background-radius: 12;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 8, 0, 0, 4);
+    -fx-cursor: hand;
+    -fx-border-radius: 12;
+    -fx-border-color: #BF360C;
+    -fx-border-width: 1;
+    -fx-transition: all 0.2s ease;
+}
+
+.registerButton:pressed {
+    -fx-background-color: linear-gradient(to bottom, #D84315, #BF360C);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 4, 0, 0, 2);
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+
+.usernameTextField {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #b0bec5;
+    -fx-border-width: 1;
+    -fx-padding: 8 12;
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 4, 0, 0, 2);
+    -fx-text-fill: #333333;
+}
+
+.usernameTextField:focused {
+    -fx-border-color: #42a5f5; /* Light blue border on focus */
+    -fx-effect: dropshadow(three-pass-box, rgba(66, 165, 245, 0.3), 6, 0, 0, 3);
+}
+/* Effect when the text field is not empty */
+.usernameTextField.has-text {
+    -fx-border-color: #4CAF50; /* Green border if there is text */
+    -fx-effect: dropshadow(three-pass-box, rgba(76, 175, 80, 0.4), 8, 0, 0, 4);
+}
+
+///passwordfield color passwordTextField
+* Effect when the text field is not empty */
+.passwordTextField.has-text {
+    -fx-border-color: #4CAF50; /* Green border if there is text */
+    -fx-effect: dropshadow(three-pass-box, rgba(76, 175, 80, 0.4), 8, 0, 0, 4);
+}
+

@@ -1,0 +1,46 @@
+/* Style the spinner container */
+.spinner {
+    -fx-border-color: #c4c4c4;
+    -fx-border-radius: 2px;
+    -fx-background-radius: 2px;
+    -fx-padding: 2px;
+    -fx-background-color: #f9f9f9;
+}
+
+/* Highlight spinner when hovered */
+.spinner:hover {
+    -fx-border-color: #0078d7; /* Blue border on hover */
+    -fx-background-color: #ffffff; /* White background */
+}
+
+/* Text field inside the spinner */
+.spinner .text-field {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #333333; /* Darker text */
+    -fx-padding: 2px;
+    -fx-font-size: 12px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 1px;
+}
+
+/* Highlight the text field when focused */
+.spinner .text-field:focused {
+    -fx-border-color: #0078d7; /* Blue border */
+    -fx-border-width: 2px;
+}
+
+/* Up and down arrow buttons inside spinner */
+.spinner .increment-arrow-button, .spinner .decrement-arrow-button {
+    -fx-background-color: #f2f2f2;
+    -fx-border-color: #c4c4c4;
+    -fx-border-radius: 3px;
+    -fx-padding: 5px;
+}
+
+.spinner .increment-arrow-button:hover, .spinner .decrement-arrow-button:hover {
+    -fx-background-color: #e1e1e1; /* Slightly darker gray on hover */
+}
+
+.spinner .increment-arrow-button:pressed, .spinner .decrement-arrow-button:pressed {
+    -fx-background-color: #cccccc; /* Darker gray when pressed */
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="500.0" style="-fx-background-color: #f9f9f9;" styleClass="anchor-pane" stylesheets="@Complainandsugg.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginpage.ComplaintsSuggestionsController">
+    <children>
+        <!-- Page Title -->
+        <Label layoutX="130.0" layoutY="20.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" stylesheets="@Complainandsugg.css" text="Complaints  Suggestions" />
+
+        <!-- Description -->
+        <Label layoutX="40.0" layoutY="60.0" prefWidth="420.0" style="-fx-font-size: 14px; -fx-text-fill: #555555;" text="Please share your feedback, complaint, or suggestion below. We value your input." wrapText="true" />
+
+        <!-- Name Field -->
+        <Label layoutX="40.0" layoutY="110.0" style="-fx-font-size: 14px; -fx-text-fill: #333333;" stylesheets="@Complainandsugg.css" text="Your Name:" />
+        <TextField fx:id="nameField" layoutX="160.0" layoutY="105.0" prefWidth="300.0" promptText="Enter your full name" style="-fx-border-radius: 5; -fx-padding: 5; -fx-background-color: #ffffff;" />
+
+        <!-- Email Field -->
+        <Label layoutX="40.0" layoutY="160.0" style="-fx-font-size: 14px; -fx-text-fill: #333333;" text="Your Email:" />
+        <TextField fx:id="emailField" layoutX="160.0" layoutY="155.0" prefWidth="300.0" promptText="Enter your email address" style="-fx-border-radius: 5; -fx-padding: 5; -fx-background-color: #ffffff;" />
+
+        <!-- Complaint/Suggestion Field -->
+        <Label layoutX="40.0" layoutY="210.0" style="-fx-font-size: 14px; -fx-text-fill: #333333;" text="Message:" />
+        <TextArea fx:id="messageField" layoutX="160.0" layoutY="205.0" prefHeight="120.0" prefWidth="300.0" promptText="Write your complaint or suggestion here..." style="-fx-border-radius: 5; -fx-padding: 5; -fx-background-color: #ffffff;" wrapText="true" />
+
+        <!-- Submit Button -->
+        <Button fx:id="submitButton" layoutX="200.0" layoutY="350.0" onMouseClicked="#handleSubmit" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-background-color: #2ecc71; -fx-text-fill: white; -fx-border-radius: 5; -fx-padding: 10 20;" text="Submit" />
+    </children>
+</AnchorPane>

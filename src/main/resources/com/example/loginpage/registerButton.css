@@ -1,0 +1,22 @@
+.registerButton {
+    -fx-background-color:#000000; /* Initial background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 12px;
+    -fx-cursor: hand; /* Pointer cursor */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 6, 0, 0, 4); /* Initial shadow */
+    -fx-transition: all 0.3s ease; /* Smooth transition for effects */
+}
+
+.registerButton:hover {
+    -fx-background-color: #202421; /* Change background color on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 12, 0, 0, 6); /* Stronger shadow on hover */
+    -fx-translate-y: -2px; /* Lift effect */
+}
+
+.registerButton:pressed {
+    -fx-translate-y: 0; /* Reset position when clicked */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 6, 0, 0, 3); /* Slightly reduced shadow */
+}

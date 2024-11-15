@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="670.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.regpage.DataStore">
+   <children>
+      <Label layoutX="53.0" layoutY="98.0" prefHeight="18.0" prefWidth="73.0" text="Price">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="338.0" layoutY="100.0" prefHeight="27.0" prefWidth="90.0" text="Bedroom">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="338.0" layoutY="137.0" prefHeight="27.0" prefWidth="90.0" text="Bathroom">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="137.0" prefHeight="18.0" prefWidth="73.0" text="Area">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="338.0" layoutY="170.0" prefHeight="18.0" prefWidth="73.0" text="Block">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="14.0" prefHeight="46.0" prefWidth="203.0" text="Digital Soceity">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="price" layoutX="151.0" layoutY="101.0" />
+      <TextField fx:id="area" layoutX="151.0" layoutY="138.0" />
+      <MenuButton fx:id="block" layoutX="449.0" layoutY="171.0" mnemonicParsing="false" text="Select">
+        <items>
+          <MenuItem fx:id="A" mnemonicParsing="false" text="A" />
+          <MenuItem fx:id="B" mnemonicParsing="false" text="B" />
+            <MenuItem fx:id="C" mnemonicParsing="false" text="C" />
+            <MenuItem fx:id="D" mnemonicParsing="false" text="D" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="bedRoom" layoutX="449.0" layoutY="101.0" mnemonicParsing="false" text="Select">
+         <items>
+            <MenuItem fx:id="bd1" mnemonicParsing="false" text="2" />
+            <MenuItem fx:id="bd2" mnemonicParsing="false" text="3" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="bathRoom" layoutX="449.0" layoutY="138.0" mnemonicParsing="false" text="Select">
+         <items>
+            <MenuItem fx:id="bt1" mnemonicParsing="false" text="1" />
+            <MenuItem fx:id="bt2" mnemonicParsing="false" text="2" />
+            <MenuItem fx:id="bt3" mnemonicParsing="false" text="3" />
+         </items>
+      </MenuButton>
+      <Label layoutX="338.0" layoutY="202.0" prefHeight="18.0" prefWidth="73.0" text="Sell/Rent">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="type" layoutX="449.0" layoutY="203.0" mnemonicParsing="false" style="-fx-background-color: green;" styleClass="sell" stylesheets="@test.css" text="Select">
+         <items>
+            <MenuItem fx:id="S1" mnemonicParsing="false" text="Sell" />
+            <MenuItem fx:id="S2" mnemonicParsing="false" text="Rent" />
+         </items>
+      </MenuButton>
+      <Label alignment="CENTER" layoutX="56.0" layoutY="251.0" prefHeight="18.0" prefWidth="484.0" text="All photo file size &lt;65Kb, size(w*h) 450*350, photo type PNG" />
+      <ImageView fx:id="imageView1" fitHeight="150.0" fitWidth="200.0" layoutX="51.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageView2" fitHeight="150.0" fitWidth="200.0" layoutX="381.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageView3" fitHeight="150.0" fitWidth="200.0" layoutX="51.0" layoutY="463.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageView4" fitHeight="150.0" fitWidth="200.0" layoutX="375.0" layoutY="462.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="101.0" layoutY="430.0" mnemonicParsing="false" onMouseClicked="#setPhoto1" text="Set Photo" />
+      <Button layoutX="455.0" layoutY="430.0" mnemonicParsing="false" onMouseClicked="#setPhoto2" text="Set Photo" />
+      <Button layoutX="101.0" layoutY="626.0" mnemonicParsing="false" onMouseClicked="#setPhoto3" text="Set Photo" />
+      <Button layoutX="455.0" layoutY="626.0" mnemonicParsing="false" onMouseClicked="#setPhoto4" text="Set Photo" />
+      <Button layoutX="282.0" layoutY="626.0" mnemonicParsing="false" onMouseClicked="#post" text="Post" />
+      <Label fx:id="wrong" layoutX="169.0" layoutY="60.0" prefHeight="26.0" prefWidth="262.0">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="53.0" layoutY="170.0" prefHeight="27.0" prefWidth="90.0" text="House no">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="202.0" prefHeight="27.0" prefWidth="90.0" text="Road no">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="houseNo" layoutX="152.0" layoutY="171.0" />
+      <TextField fx:id="roadNo" layoutX="152.0" layoutY="203.0" />
+   </children>
+</AnchorPane>

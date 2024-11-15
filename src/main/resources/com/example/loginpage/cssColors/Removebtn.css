@@ -1,0 +1,28 @@
+/* General button styling */
+.button {
+    -fx-padding: 5px 10px;
+    -fx-font-size: 16px;
+    -fx-font-family: Arial, sans-serif;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+    -fx-background-color: #f9f9f9;
+
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 1);
+    -fx-transition: all 0.3s ease;
+}
+
+
+
+.remove-button:hover {
+    -fx-background-color: #ffecec; /* Lighter red for hover */
+
+    -fx-text-fill: #b71c1c;
+}
+
+.remove-button:pressed {
+    -fx-background-color: #fbe2e2; /* Pressed state */
+
+}

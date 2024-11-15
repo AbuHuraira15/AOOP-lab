@@ -1,0 +1,57 @@
+.anchorpane {
+    -fx-background-color: linear-gradient(to bottom, #ff7e5f, #feb47b); /* Sunset gradient */
+}
+
+.AMancorpaneWhitebg {
+    -fx-background-color: white; /* Set background color to white */
+   -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 3); /* Add shadow effect */
+   // -fx-padding: 10; /* Add some padding */
+    //-fx-border-radius: 5; /* Optional rounded corners */
+    //-fx-background-radius: 5; /* Match background radius to border radius */
+}
+
+.label1 {
+    -fx-text-fill: linear-gradient(to right, #4facfe, #00f2fe); /* Gradient text color */
+    -fx-font-size: 18px; /* Adjust font size */
+    -fx-font-weight: bold; /* Make text bold */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 2, 2); /* Add shadow to text */
+    -fx-padding: 3; /* Add padding around text */
+    -fx-background-color: transparent; /* Ensure no background */
+}
+
+.anchor-pane {
+    -fx-background-color: linear-gradient(to bottom, #2d3436, #636e72); /* Dynamic gradient background */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 15, 0.3, 0, 5); /* Strong shadow for focus */
+    -fx-border-color: #1abc9c; /* Soft teal border for elegance */
+    -fx-border-width: 3; /* Border thickness */
+    -fx-border-radius: 8; /* Rounded border corners */
+    -fx-background-radius: 8; /* Match the background corners */
+    -fx-padding: 10; /* Space inside the pane */
+    -fx-transition: 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Optional hover effect */
+.anchor-pane:hover {
+    -fx-background-color: linear-gradient(to bottom, #636e72, #2d3436); /* Reverse the gradient for interaction */
+    -fx-border-color: #16a085; /* Brighter teal border on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 255, 170, 0.5), 20, 0.5, 0, 6); /* Glow effect with hover */
+}
+
+
+.dashboard {
+    -fx-font-family: "Arial";
+    -fx-font-size: 15px;
+    -fx-fill: black; /* Text color */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 4, 0.5, 2, 2); /* Shadow effect */
+}
+
+.anchor{
+-fx-background-color: linear-gradient(to bottom, #2d3436, #636e72); /* Dynamic gradient background */
+
+    -fx-border-color: #1abc9c; /* Soft teal border for elegance */
+    -fx-border-width: 3; /* Border thickness */
+    -fx-border-radius: 8; /* Rounded border corners */
+    -fx-background-radius: 8; /* Match the background corners */
+    -fx-padding: 10; /* Space inside the pane */
+    -fx-transition: 0.3s; /* Smooth transition for hover effects */
+    }

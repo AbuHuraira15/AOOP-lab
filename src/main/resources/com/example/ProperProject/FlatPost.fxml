@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="203.0" prefWidth="284.0" styleClass="AMancorpaneWhitebg" stylesheets="@../loginpage/cssColors/AncorpaneBc.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+
+    <children>
+        <!-- Property Image -->
+        <ImageView fx:id="propertyImage" fitHeight="133.0" fitWidth="313.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../../UnitedAreaPhotos/BuyPhotos/IMG-20241225-WA0044.jpg" />
+            </image>
+        </ImageView>
+
+        <!-- Navigation Buttons -->
+        <Button fx:id="leftArrowButton" layoutY="16.0" mnemonicParsing="false" onAction="#ClickActionOnLeftArrow2" prefHeight="102.0" prefWidth="40.0" style="-fx-background-color: transparent;" text="˂" textFill="WHITE">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="rightArrowButton" layoutX="244.0" layoutY="16.0" mnemonicParsing="false" onAction="#ClickActionOnRightArrow2" prefHeight="102.0" prefWidth="40.0" style="-fx-background-color: transparent;" text="˃" textFill="WHITE">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Button>
+
+        <!-- Action Buttons -->
+        <Button fx:id="optionsButton" layoutX="268.0" layoutY="136.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="threedotbutton" stylesheets="@../loginpage/cssColors/threedots.css" text="●●●" textFill="#1c85d4" />
+
+        <Button fx:id="buyButton" layoutX="252.0" layoutY="158.0" mnemonicParsing="false" onAction="#BuyFlat" style="-fx-background-color: transparent;" styleClass="buybutton" stylesheets="@../loginpage/cssColors/Buybutton.css" text="Buy">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+
+        <!-- Property Details -->
+        <Label fx:id="bedroomLabel" layoutX="5.0" layoutY="158.0" prefHeight="17.0" prefWidth="15.0" text="3 " textFill="#9a2d5c">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="159.0" text="bed | " />
+
+        <Label fx:id="bathroomLabel" layoutX="50.0" layoutY="158.0" text="2" textFill="#0497aa">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="65.0" layoutY="159.0" text="bath | " />
+
+        <Label fx:id="propertySizeLabel" layoutX="100.0" layoutY="159.0" prefHeight="17.0" prefWidth="149.0" text="1920 sqft - House for sale" />
+
+        <Label fx:id="priceLabel" layoutX="7.0" layoutY="136.0" prefHeight="20.0" prefWidth="211.0" text="7,000,000">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+
+        <Label fx:id="addressLabel" layoutX="3.0" layoutY="177.0" prefHeight="17.0" prefWidth="232.0" text="Address will be here" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+/* styles.css */
+/* Default state */
+.searchButton {
+    -fx-background-color: #3498db; /* Default blue */
+    -fx-text-fill: white;          /* White text */
+    -fx-font-size: 14px;           /* Text size */
+    -fx-padding: 10px 20px;        /* Padding */
+    -fx-background-radius: 5px;    /* Rounded corners */
+    -fx-border-radius: 5px;        /* Rounded borders */
+    -fx-cursor: hand;              /* Pointer cursor on hover */
+}
+
+/* Hover state */
+.searchButton:hover {
+    -fx-background-color: #2980b9; /* Darker blue */
+}
+
+/* Pressed state */
+.searchButton:pressed {
+    -fx-background-color: #1c5981; /* Even darker blue */
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.regpage.ComplaintsSuggestionsController" style="-fx-background-color: #f9f9f9;">
+    <children>
+        <!-- Page Title -->
+        <Label layoutX="130.0" layoutY="20.0" text="Complaints  Suggestions" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" />
+
+        <!-- Description -->
+        <Label layoutX="40.0" layoutY="60.0" text="Please share your feedback, complaint, or suggestion below. We value your input." style="-fx-font-size: 14px; -fx-text-fill: #555555;" wrapText="true" prefWidth="420.0" />
+
+        <!-- Name Field -->
+        <Label layoutX="40.0" layoutY="110.0" text="Your Name:" style="-fx-font-size: 14px; -fx-text-fill: #333333;" />
+        <TextField fx:id="nameField" layoutX="160.0" layoutY="105.0" prefWidth="300.0" promptText="Enter your full name" style="-fx-border-radius: 5; -fx-padding: 5; -fx-background-color: #ffffff;" />
+
+        <!-- Email Field -->
+        <Label layoutX="40.0" layoutY="160.0" text="Your Email:" style="-fx-font-size: 14px; -fx-text-fill: #333333;" />
+        <TextField fx:id="emailField" layoutX="160.0" layoutY="155.0" prefWidth="300.0" promptText="Enter your email address" style="-fx-border-radius: 5; -fx-padding: 5; -fx-background-color: #ffffff;" />
+
+        <!-- Complaint/Suggestion Field -->
+        <Label layoutX="40.0" layoutY="210.0" text="Message:" style="-fx-font-size: 14px; -fx-text-fill: #333333;" />
+        <TextArea fx:id="messageField" layoutX="160.0" layoutY="205.0" prefHeight="120.0" prefWidth="300.0" promptText="Write your complaint or suggestion here..." wrapText="true" style="-fx-border-radius: 5; -fx-padding: 5; -fx-background-color: #ffffff;" />
+
+        <!-- Submit Button -->
+        <Button fx:id="submitButton" layoutX="200.0" layoutY="350.0" text="Submit" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-background-color: #2ecc71; -fx-text-fill: white; -fx-border-radius: 5; -fx-padding: 10 20;" onMouseClicked="#handleSubmit" />
+    </children>
+</AnchorPane>

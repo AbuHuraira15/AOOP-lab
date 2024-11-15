@@ -1,0 +1,116 @@
+/* Main container styling */
+.root {
+    -fx-background-color: #f0f2f5;
+}
+
+.content-box {
+    -fx-background-color: white;
+    -fx-padding: 20px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 3);
+}
+
+/* Header styling */
+.field-label {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #2d3436;
+    -fx-font-weight: bold;
+}
+
+/* Input group styling */
+.input-group {
+    -fx-background-color: transparent;
+    -fx-padding: 5px 0;
+}
+
+/* Text field styling */
+.text-field {
+    -fx-background-color: #f8f9fa;
+    -fx-background-radius: 5px;
+    -fx-border-color: #e1e4e8;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px 12px;
+    -fx-font-size: 13px;
+    -fx-prompt-text-fill: #a0aec0;
+}
+
+.text-field:focused {
+    -fx-background-color: white;
+    -fx-border-color: #4299e1;
+    -fx-effect: dropshadow(gaussian, rgba(66, 153, 225, 0.2), 4, 0, 0, 0);
+}
+
+/* Date picker styling */
+.date-picker {
+    -fx-background-color: transparent;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #4299e1;
+    -fx-background-radius: 0 5px 5px 0;
+}
+
+.date-picker .arrow-button .arrow {
+    -fx-background-color: white;
+}
+
+.date-picker .text-field {
+    -fx-background-radius: 5px 0 0 5px;
+}
+
+/* Button styling */
+.action-button {
+    -fx-background-color: #4299e1;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.action-button:hover {
+    -fx-background-color: #3182ce;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 4, 0, 0, 0);
+}
+
+.submit-button {
+    -fx-background-color: #48bb78;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-min-width: 120px;
+}
+
+.submit-button:hover {
+    -fx-background-color: #38a169;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 4, 0, 0, 0);
+}
+
+/* Image styling */
+#imageView {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 1);
+}
+
+/* Grid styling */
+.grid-pane {
+    -fx-hgap: 15;
+    -fx-vgap: 15;
+    -fx-padding: 10;
+}
+
+/* Animation for buttons */
+.action-button, .submit-button {
+    -fx-transition: -fx-background-color 0.2s;
+}
+
+/* Name label styling */
+.field-label[text="Name"] {
+    -fx-background-color: #f8f9fa;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px 10px;
+    -fx-border-color: #e1e4e8;
+    -fx-border-radius: 5px;
+}

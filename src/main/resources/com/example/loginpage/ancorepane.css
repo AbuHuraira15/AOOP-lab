@@ -1,0 +1,26 @@
+.ancorepane {
+    -fx-background-color: #f0f0f0; /* Light gray background */
+    -fx-border-color: #e38f09;    /* Blue border */
+    -fx-border-width: 2px;        /* Border width */
+    -fx-border-radius: 5px;       /* Rounded corners */
+    -fx-background-radius: 5px;  /* Match border radius */
+    -fx-padding: 10px;           /* Inner padding */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 4); /* Shadow effect */
+}
+
+.ancorepane1 {
+    -fx-background-color: #f0f0f0; /* Light gray background */
+    -fx-border-color: #e38f09;    /* Blue border */
+    -fx-border-width: 2px;        /* Border width */
+    -fx-border-radius: 5px;       /* Rounded corners */
+    -fx-background-radius: 5px;  /* Match border radius */
+    -fx-padding: 10px;           /* Inner padding */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 4); /* Shadow effect */
+}
+
+.ancorepane2 {
+    -fx-background-color: #f0f0f0; /* Light gray background */
+    -fx-border-color: #e38f09;    /* Blue border */
+            /* Inner padding */
+
+}

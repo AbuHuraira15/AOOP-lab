@@ -1,0 +1,75 @@
+/* Sidebar Container */
+.sidebar {
+    -fx-background-color: linear-gradient(to bottom, #308ab8, #105273);
+    //-fx-min-width: 25px;
+    //-fx-padding: 20;
+    //-fx-spacing: 20;
+    //-fx-alignment: top-left;
+}
+
+/* Logo Section */
+.sidebar-logo {
+    -fx-alignment: center-left;
+    -fx-spacing: 10;
+}
+
+.sidebar-logo-icon {
+    -fx-min-width: 40;
+    -fx-min-height: 40;
+    -fx-background-color: white;
+    -fx-background-radius: 50%;
+}
+
+.sidebar-logo-text {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/* Section Headers */
+.sidebar-section {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-text-fill: #cccccc;
+    -fx-padding: 10 0 5 0;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #2E4A73;
+}
+
+/* Navigation Buttons */
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+    -fx-alignment: center-left;
+    -fx-cursor: hand;
+    -fx-spacing: 10;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-icon {
+    -fx-min-width: 20;
+    -fx-min-height: 20;
+    -fx-background-color: white;
+    -fx-background-radius: 50%;
+}
+
+/* Active Button */
+.sidebar-button-active {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-text-fill: #ffffff;
+}
+
+/* Footer Section */
+.sidebar-footer {
+    -fx-text-fill: #cccccc;
+    -fx-font-size: 12;
+    -fx-alignment: center;
+    -fx-padding: 10 0 0 0;
+}

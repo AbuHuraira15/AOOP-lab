@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPage" prefHeight="704.0" prefWidth="644.0" styleClass="main-pane" stylesheets="@PayBill.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.regpage.PayBill">
+   <VBox layoutX="23.0" layoutY="9.0" prefHeight="686.0" prefWidth="600.0" spacing="10" styleClass="content-box">
+      <!-- Header Section -->
+      <StackPane prefHeight="80.0" styleClass="header">
+         <Label styleClass="title" text="User Bill Payment System" />
+      </StackPane>
+
+      <!-- User Input Section -->
+      <HBox spacing="10" styleClass="search-box">
+         <TextField fx:id="UserId" prefWidth="180.0" promptText="Enter user ID" styleClass="input-field" />
+         <Button onMouseClicked="#loadUserData" styleClass="primary-button" text="Load User Data" />
+         <Label prefHeight="26.0" prefWidth="69.0" text="Bill Month">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </Label>
+         <DatePicker fx:id="getBillMonth" prefWidth="140.0" promptText="Bill Month" styleClass="date-picker" />
+      </HBox>
+      <AnchorPane prefHeight="28.0" prefWidth="579.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="86.0" text="User name:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="userName" layoutX="106.0" layoutY="-1.0" prefHeight="30.0" prefWidth="239.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="billMonthShow" layoutX="429.0" layoutY="-1.0" prefHeight="30.0" prefWidth="149.0" text="Bill month">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+
+      <!-- Bills Section -->
+      <ScrollPane fx:id="ShowOrNot" fitToWidth="true" prefHeight="485.0" prefWidth="579.0" styleClass="bills-container">
+         <VBox spacing="10">
+            <!-- WiFi Section -->
+            <VBox styleClass="bill-section">
+               <CheckBox fx:id="wifi" styleClass="bill-checkbox" text="Subscribe to WiFi for this month" />
+               <HBox fx:id="wifiDisable" spacing="10" styleClass="bill-details">
+                  <ComboBox fx:id="wifiSpeed" prefWidth="150.0" promptText="Select Speed" styleClass="combo-box">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="10 MBPS - ৳1000" />
+                           <String fx:value="20 MBPS - ৳1500" />
+                        </FXCollections>
+                     </items>
+                  </ComboBox>
+                  <Label fx:id="wifiPrice" styleClass="price-label" text="৳0">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin></Label>
+                  <Button onMouseClicked="#wifiPay" styleClass="pay-button" text="Pay Now">
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin></Button>
+               </HBox>
+            </VBox>
+
+            <!-- Gas Bill Section -->
+            <VBox styleClass="bill-section">
+               <CheckBox fx:id="gas" styleClass="bill-checkbox" text="Pay Gas Bill" />
+               <HBox fx:id="gasDisable" spacing="10" styleClass="bill-details">
+                  <Label styleClass="label-field" text="Monthly Gas Bill" />
+                  <Label fx:id="gasPrice" styleClass="price-label" text="৳0">
+                     <HBox.margin>
+                        <Insets left="130.0" />
+                     </HBox.margin></Label>
+                  <Button onMouseClicked="#gasPay" styleClass="pay-button" text="Pay Now">
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin></Button>
+               </HBox>
+            </VBox>
+
+            <!-- Electricity Bill Section -->
+            <VBox styleClass="bill-section">
+               <CheckBox fx:id="EcBill" styleClass="bill-checkbox" text="Pay Electricity Bill" />
+               <HBox fx:id="EcDisable" spacing="10" styleClass="bill-details">
+                  <Label text="Enter recharge amount" />
+                  <TextField fx:id="getAmount" prefWidth="150.0" promptText="Enter amount" styleClass="input-field">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin></TextField>
+                  <Label fx:id="wrongAmount" prefHeight="26.0" prefWidth="126.0" />
+                  <Button onMouseClicked="#EcPay" styleClass="pay-button" text="Pay Now">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin></Button>
+               </HBox>
+            </VBox>
+
+            <!-- Rent Section -->
+            <VBox styleClass="bill-section">
+               <CheckBox fx:id="HomeRent" styleClass="bill-checkbox" text="Pay Monthly Rent" />
+               <HBox fx:id="homeDisable" spacing="10" styleClass="bill-details">
+                  <Label styleClass="label-field" text="Monthly Rent" />
+                  <Label fx:id="rentPrice" styleClass="price-label" text="৳0">
+                     <HBox.margin>
+                        <Insets left="130.0" />
+                     </HBox.margin></Label>
+                  <Button onMouseClicked="#rentPay" styleClass="pay-button" text="Pay Now">
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin></Button>
+               </HBox>
+            </VBox>
+
+            <!-- Utility Section -->
+            <VBox styleClass="bill-section">
+               <CheckBox fx:id="Utility" styleClass="bill-checkbox" text="Pay Utility Bills" />
+               <HBox fx:id="utilityDisable" spacing="10" styleClass="bill-details">
+                  <Label styleClass="label-field" text="Utility Charges" />
+                  <Label fx:id="utilityPrice" styleClass="price-label" text="৳0">
+                     <HBox.margin>
+                        <Insets left="130.0" />
+                     </HBox.margin></Label>
+                  <Button onMouseClicked="#utilityPay" styleClass="pay-button" text="Pay Now">
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin></Button>
+               </HBox>
+            </VBox>
+         </VBox>
+      </ScrollPane>
+      <AnchorPane prefHeight="63.0" prefWidth="579.0">
+         <children>
+            <Button layoutX="7.0" layoutY="3.0" mnemonicParsing="false" onMouseClicked="#back" text="Back" />
+         </children>
+      </AnchorPane>
+   </VBox>
+</AnchorPane>

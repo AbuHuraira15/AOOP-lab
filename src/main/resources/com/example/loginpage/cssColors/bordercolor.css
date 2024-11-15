@@ -1,0 +1,61 @@
+.Heading {
+    -fx-border-color:  #126e55; /* Color of the border */
+    -fx-border-width: 2;    /* Thickness of the border */
+    -fx-padding: 5;         /* Space between the text and the border */
+    -fx-background-color: #f4f4f4; /* Background color to match your design */
+}
+
+
+
+/* Label styling */
+.label {
+    -fx-text-fill: #333333; /* Dark gray text */
+    -fx-font-size: 16px;    /* Slightly larger font for readability */
+    -fx-font-weight: bold;
+}
+
+
+/* Email text emphasis */
+.email {
+    -fx-text-fill: #007bff; /* Blue text for emails */
+    -fx-font-style: italic;
+}
+
+/* Password field styling */
+.password {
+    -fx-text-fill: #ff4500; /* Orange-red for password text */
+    -fx-font-weight: bold;
+}
+
+/* Default black text with font styles */
+.label11 {
+    -fx-text-fill: black;
+    -fx-font-family: "Arial"; /* Replace with your desired font family */
+    -fx-font-size: 14px;      /* Font size */
+    -fx-font-weight: normal;  /* Options: normal, bold */
+}
+
+/* Specific font and styles for names */
+.name {
+    -fx-text-fill: black;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* Specific font and styles for phone numbers */
+.phone {
+    -fx-text-fill: black;
+    -fx-font-family: "Courier New";
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+}
+
+/* Specific font and styles for address and other details */
+.address {
+    -fx-text-fill: black;
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 13px;
+    -fx-font-style: italic; /* Options: normal, italic */
+}
+

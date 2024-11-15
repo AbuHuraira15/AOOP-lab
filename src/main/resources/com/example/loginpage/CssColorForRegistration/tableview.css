@@ -1,0 +1,64 @@
+/* General TableView Styling */
+.tableview {
+    -fx-font-family: Arial;
+    -fx-font-size: 14px;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+}
+
+/* Header Row Styling */
+.tableview .column-header {
+    -fx-background-color: #f2f2f2; /* Light gray */
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+/* ID Column Styling */
+.tableview.idnameTable_column{
+    -fx-background-color: #ffcccc; /* Light red */
+}
+
+/* Firstname Column Styling */
+.tableview.firstnametablecolumn{
+    -fx-background-color: #ccffcc; /* Light green */
+}
+
+/* Lastname Column Styling */
+.tableview.lastnametablecolumn{
+    -fx-background-color: #add8e6; /* Light blue */
+}
+
+/* Fathername Column Styling */
+.tableview.fathername-column {
+    -fx-background-color: #e6e6fa; /* Lavender */
+}
+
+/* NID Column Styling */
+.tableview.nid-column {
+    -fx-background-color: #fffacd; /* Light yellow */
+}
+
+/* Mobile Column Styling */
+.tableview.mobile-column {
+    -fx-background-color: #ffd700; /* Gold */
+}
+
+/* Email Column Styling */
+.tableview.email-column {
+    -fx-background-color: #d1e7dd; /* Mint green */
+}
+
+/* Password Column Styling */
+.tableview.password-column {
+    -fx-background-color: #f8d7da; /* Soft red */
+}
+
+/* DOB Column Styling */
+.table-view .dob-column {
+    -fx-background-color: #d8bfd8; /* Thistle */
+}
+
+/* Address Column Styling */
+.table-view .address-column {
+    -fx-background-color: #f5deb3; /* Wheat */
+}

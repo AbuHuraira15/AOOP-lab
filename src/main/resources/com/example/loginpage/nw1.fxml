@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginpage.HelloController">
+    <children>
+        <!-- Main Container -->
+        <VBox spacing="0" style="-fx-background-color: #f9f9f9;" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+
+            <!-- Chat Header -->
+            <HBox alignment="CENTER_LEFT" style="-fx-background-color: #4CAF50; -fx-padding: 15;">
+                <Label style="-fx-text-fill: white; -fx-font-size: 20px; -fx-font-weight: bold;" text="Resident Chat" />
+            </HBox>
+
+            <!-- Main Content SplitPane -->
+            <SplitPane dividerPositions="0.25" orientation="HORIZONTAL">
+
+                <!-- Residents List Section -->
+                <VBox style="-fx-background-color: #f7f7f7; -fx-padding: 10;">
+                    <Label style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-padding: 5 0 10 0;" stylesheets="@hii.css" text="Residents" />
+                    <ListView fx:id="residentsListView" style="-fx-border-color: #ddd;" stylesheets="@hii.css" VBox.vgrow="ALWAYS" />
+                </VBox>
+
+                <!-- Chat Section -->
+                <VBox spacing="10" style="-fx-padding: 10;">
+                    <!-- Chat ScrollPane -->
+                    <ScrollPane fx:id="chatScrollPane" fitToWidth="true" style="-fx-border-color: #ddd;" styleClass="chat-message" stylesheets="@hii.css" VBox.vgrow="ALWAYS">
+                        <content>
+                            <VBox fx:id="chatVBox" spacing="10" style="-fx-padding: 10;">
+                                <!-- Chat messages will be dynamically added here -->
+                            </VBox>
+                        </content>
+                    </ScrollPane>
+
+                    <!-- Message Input Section -->
+                    <HBox alignment="CENTER" spacing="10" style="-fx-padding: 5;">
+                        <TextField fx:id="messageTextField" promptText="Type your message..." style="-fx-border-color: #ddd; -fx-padding: 8;" styleClass="text-field" stylesheets="@hii.css" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="sendButton" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 15;" stylesheets="@hii.css" text="Send" />
+                    </HBox>
+                </VBox>
+
+            </SplitPane>
+        </VBox>
+    </children>
+</AnchorPane>

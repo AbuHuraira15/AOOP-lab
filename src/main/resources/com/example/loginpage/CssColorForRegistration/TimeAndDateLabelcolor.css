@@ -1,0 +1,11 @@
+.time-label {
+    -fx-text-fill: #2196F3; /* Blue color for the time */
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.date-label {
+    -fx-text-fill: #F44336; /* Red color for the date */
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}

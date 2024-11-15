@@ -1,0 +1,13 @@
+/* Style for the labels (e.g., "Admin Id", "Username") */
+.label {
+    -fx-text-fill: #4A4A4A; /* Dark gray for the label text */
+    -fx-font-size: 14px; /* Standard font size */
+    -fx-font-weight: normal; /* Regular weight for labels */
+}
+
+/* Style for the values (e.g., "2330720", "Administrator") */
+.value {
+    -fx-text-fill: #000000; /* Black for strong emphasis */
+    -fx-font-size: 14px; /* Same size for consistency */
+    -fx-font-weight: bold; /* Bold for the value text */
+}

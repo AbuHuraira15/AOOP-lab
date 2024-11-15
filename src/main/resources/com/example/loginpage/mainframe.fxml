@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginpage.MainFrameController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="153.0" layoutY="84.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="150.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane prefHeight="160.0" prefWidth="1100.0" stylesheets="@cssColors/AncorpaneBc.css" AnchorPane.bottomAnchor="-10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutY="110.33333333333333" prefHeight="46.0" prefWidth="1100.0" style="-fx-background-color: #126e55;" stylesheets="@cssColors/AncorpaneBc.css" AnchorPane.bottomAnchor="9.666666666666657" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="110.33333333333333">
+                                 <children>
+                                    <Button fx:id="HomeButton" layoutX="14.0" layoutY="4.0" mnemonicParsing="false" onAction="#ActionOnHomeButton" prefHeight="25.0" prefWidth="91.0" stylesheets="@cssColors/Mainframe.css" text="Home">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="BuyButton" layoutX="120.0" layoutY="4.0" mnemonicParsing="false" onAction="#ActionOnBuyButton" prefHeight="25.0" prefWidth="91.0" stylesheets="@cssColors/Mainframe.css" text="Buy">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="RentButton" layoutX="230.0" layoutY="4.0" mnemonicParsing="false" onAction="#ActionOnRentButton" prefHeight="25.0" prefWidth="91.0" stylesheets="@cssColors/Mainframe.css" text="Rent">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="ContuctUsButton" layoutX="983.0" layoutY="4.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" stylesheets="@cssColors/Mainframe.css" text="Contact us" AnchorPane.rightAnchor="-4.263256414560601E-14">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <ImageView fitHeight="87.0" fitWidth="156.0" layoutX="21.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../UnitedAreaPhotos/logoforHomepage.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="HomePageSignInButton" layoutX="1006.0" layoutY="67.0" mnemonicParsing="false" onAction="#HomePageSignupButtonOnAction" styleClass="signinButton" stylesheets="@cssColors/HomePageSignInbutton.css" text="Sign in" AnchorPane.rightAnchor="-4.263256414560601E-14" />
+                              <Label layoutX="32.0" layoutY="90.0" prefHeight="17.0" prefWidth="89.0" text="United Society" textFill="#26883b">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <center>
+                  <AnchorPane prefHeight="451.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="AnchorpaneVisible2" layoutY="-3.0" prefHeight="456.0" prefWidth="1100.0" style="-fx-background-color: transpaent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane fx:id="filterAnchorpanesetVisible" layoutX="11.0" layoutY="20.0" prefHeight="423.0" prefWidth="178.0" styleClass="AMancorpaneWhitebg" stylesheets="@cssColors/AncorpaneBc.css">
+                                 <children>
+                                    <ScrollPane hbarPolicy="NEVER" prefHeight="427.0" prefWidth="177.0" vbarPolicy="NEVER">
+                                       <content>
+                                          <AnchorPane prefHeight="617.0" prefWidth="178.0">
+                                             <children>
+                                                <AnchorPane layoutX="9.0" layoutY="14.0" prefHeight="38.0" prefWidth="147.0" styleClass="AMancorpaneWhitebg" stylesheets="@cssColors/AncorpaneBc.css">
+                                                   <children>
+                                                      <Label alignment="CENTER" layoutX="14.0" layoutY="-1.0" prefHeight="37.0" prefWidth="121.0" text="Filters" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <MenuButton fx:id="PriceMinButton" layoutX="2.0" layoutY="125.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="152.0" style="-fx-background-color: transparent;" styleClass="combo-box" stylesheets="@cssColors/ComboBox.css" text="Any">
+                                                  <items>
+                                                      <MenuItem fx:id="priceMinItem1" mnemonicParsing="false" onAction="#MinPriceShow1" text="5000000" />
+                                                    <MenuItem fx:id="priceMinItem2" mnemonicParsing="false" onAction="#MinPriceShow2" text="6000000" />
+                                                    <MenuItem fx:id="priceMinItem3" mnemonicParsing="false" onAction="#MinPriceShow3" text="7000000" />
+                                                  </items>
+                                                </MenuButton>
+                                                <Label layoutX="9.0" layoutY="73.0" prefHeight="27.0" prefWidth="120.0" text="Price">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="9.0" layoutY="100.0" prefHeight="17.0" prefWidth="46.0" text="Min" />
+                                                <MenuButton fx:id="PriceMaxButton" layoutX="1.0" layoutY="189.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="152.0" style="-fx-background-color: transparent;" styleClass="combo-box" stylesheets="@cssColors/ComboBox.css" text="Any">
+                                                   <items>
+                                                      <MenuItem fx:id="priceMaxItem1" mnemonicParsing="false" onAction="#MaxPriceShow1" text="12000000" />
+                                                      <MenuItem fx:id="priceMaxItem2" mnemonicParsing="false" onAction="#MaxPriceShow2" text="15000000" />
+                                                      <MenuItem fx:id="priceMaxItem3" mnemonicParsing="false" onAction="#MaxPriceShow3" text="26000000" />
+                                                   </items>
+                                                </MenuButton>
+                                                <Label layoutX="5.0" layoutY="167.0" text="Max" />
+                                                <Label layoutX="3.0" layoutY="230.0" prefHeight="27.0" prefWidth="120.0" text="Bedrooms">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <MenuButton fx:id="MaxBed" layoutX="88.0" layoutY="286.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="73.0" style="-fx-background-color: transparent;" styleClass="combo-box" stylesheets="@cssColors/ComboBox.css" text="Any">
+                                                   <items>
+                                                      <MenuItem fx:id="BedMax1" mnemonicParsing="false" onAction="#MaxBed1" text="2" />
+                                                      <MenuItem fx:id="BedMax2" mnemonicParsing="false" onAction="#MaxBed2" text="4" />
+                                                      <MenuItem fx:id="BedMax3" mnemonicParsing="false" onAction="#MaxBed3" text="6" />
+                                                   </items>
+                                                </MenuButton>
+                                                <MenuButton fx:id="MinBed" layoutX="2.0" layoutY="287.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="73.0" style="-fx-background-color: transparent;" styleClass="combo-box" stylesheets="@cssColors/ComboBox.css" text="Any">
+                                                   <items>
+                                                      <MenuItem fx:id="BedMin1" mnemonicParsing="false" onAction="#MinBed1" text="1" />
+                                                      <MenuItem fx:id="BedMin2" mnemonicParsing="false" onAction="#MinBed2" text="3" />
+                                                      <MenuItem fx:id="BedMin3" mnemonicParsing="false" onAction="#MinBed3" text="5" />
+                                                   </items>
+                                                </MenuButton>
+                                                <Label layoutX="9.0" layoutY="269.0" prefHeight="17.0" prefWidth="46.0" text="Min" />
+                                                <Label layoutX="93.0" layoutY="269.0" text="Max" />
+                                                <Label layoutX="3.0" layoutY="361.0" prefHeight="27.0" prefWidth="120.0" text="Bathrooms">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <MenuButton fx:id="BathRoom" layoutX="4.0" layoutY="398.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="73.0" style="-fx-background-color: transparent;" styleClass="combo-box" stylesheets="@cssColors/ComboBox.css" text="Any">
+                                                   <items>
+                                                      <MenuItem fx:id="bath1" mnemonicParsing="false" onAction="#Bathroom1" text="1" />
+                                                      <MenuItem fx:id="bath2" mnemonicParsing="false" onAction="#Bathroom2" text="2" />
+                                                      <MenuItem fx:id="bath3" mnemonicParsing="false" onAction="#Bathroom3" text="3" />
+                                                   </items>
+                                                </MenuButton>
+                                                <MenuButton layoutX="3.0" layoutY="511.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="73.0" style="-fx-background-color: transparent;" styleClass="combo-box" stylesheets="@cssColors/ComboBox.css" text="Any">
+                                                   <items>
+                                                      <MenuItem mnemonicParsing="false" text="1" />
+                                                      <MenuItem mnemonicParsing="false" text="2" />
+                                                      <MenuItem mnemonicParsing="false" text="3" />
+                                                   </items>
+                                                </MenuButton>
+                                                <Label layoutX="9.0" layoutY="475.0" prefHeight="27.0" prefWidth="120.0" text="Car Spaces">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Button fx:id="SearchButton" layoutX="4.0" layoutY="571.0" mnemonicParsing="false" onAction="#SearchButtonOnAction" prefHeight="40.0" prefWidth="167.0" styleClass="searchButton" stylesheets="@cssColors/SearchButton.css" text="Search" />
+                                             </children>
+                                          </AnchorPane>
+                                       </content></ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="BuyAnchorpane" layoutX="190.0" layoutY="12.0" prefHeight="437.0" prefWidth="905.0">
+                                 <children>
+                                    <FlowPane fx:id="FlowPane" hgap="20.0" layoutY="8.0" prefHeight="425.0" prefWidth="905.0" vgap="20.0">
+                                       <children>
+                                          <AnchorPane prefHeight="203.0" prefWidth="284.0" styleClass="AMancorpaneWhitebg" stylesheets="@cssColors/AncorpaneBc.css">
+                                             <children>
+                                                <ImageView fx:id="ImageInancorpane3" fitHeight="133.0" fitWidth="284.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../../UnitedAreaPhotos/BuyPhotos/IMG-20241225-WA0044.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button fx:id="LeftArrowButton13" alignment="BASELINE_CENTER" layoutY="16.0" mnemonicParsing="false" onAction="#ClickActionOnLeftArrow2" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˂" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="threeDotButton3" layoutX="246.0" layoutY="135.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="threedotbutton" stylesheets="@cssColors/threedots.css" text="●●●" textFill="#1c85d4" />
+                                                <Button fx:id="RightArrowButton13" layoutX="211.0" layoutY="15.0" mnemonicParsing="false" onAction="#ClickActionOnRightArrow2" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˃" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button layoutX="222.0" layoutY="160.0" mnemonicParsing="false" onAction="#BuyFlat" style="-fx-background-color: transparent;" styleClass="buybutton" stylesheets="@cssColors/Buybutton.css" text="Buy">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label fx:id="bed0" layoutX="5.0" layoutY="158.0" prefHeight="17.0" prefWidth="15.0" text="3 " textFill="#9a2d5c">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font></Label>
+                                                <Label layoutX="14.0" layoutY="159.0" text="bed | " />
+                                                <Label layoutX="43.0" layoutY="158.0" text="2" textFill="#0497aa">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font></Label>
+                                                <Label layoutX="54.0" layoutY="159.0" prefHeight="17.0" prefWidth="35.0" text="bath | " />
+                                                <Label fx:id="price1" layoutX="7.0" layoutY="136.0" prefHeight="20.0" prefWidth="211.0" text="7000000">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font></Label>
+                                                <Label fx:id="addr" layoutX="3.0" layoutY="177.0" prefHeight="17.0" prefWidth="232.0" text="Label" />
+                                                <Label layoutX="84.0" layoutY="159.0" prefHeight="17.0" prefWidth="149.0" text="1920 sqft -House for sale" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="postAnchorpane2" prefHeight="203.0" prefWidth="284.0" styleClass="AMancorpaneWhitebg" stylesheets="@cssColors/AncorpaneBc.css">
+                                             <children>
+                                                <ImageView fx:id="ImageInancorpane2" fitHeight="133.0" fitWidth="284.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../../UnitedAreaPhotos/BuyPhotos/Frame31/IMG-20241227-WA0022.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button fx:id="LeftArrowButton12" alignment="BASELINE_CENTER" layoutY="16.0" mnemonicParsing="false" onAction="#ClickActionOnLeftArrow3" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˂" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="threeDotButton2" layoutX="246.0" layoutY="135.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="threedotbutton" stylesheets="@cssColors/threedots.css" text="●●●" textFill="#1c85d4" />
+                                                <Button fx:id="RightArrowButton12" layoutX="211.0" layoutY="15.0" mnemonicParsing="false" onAction="#ClickActionOnRightArrow3" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˃" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button layoutX="222.0" layoutY="160.0" mnemonicParsing="false" onAction="#BuyFlat1" style="-fx-background-color: transparent;" styleClass="buybutton" stylesheets="@cssColors/Buybutton.css" text="Buy">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label fx:id="MoneyButton2" layoutX="7.0" layoutY="136.0" prefHeight="20.0" prefWidth="207.0" text="7000000">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="addr1" layoutX="7.0" layoutY="177.0" prefHeight="17.0" prefWidth="231.0" text="United city, Block C - Dhaka,BD" />
+                                                <Label fx:id="bed1" layoutX="6.0" layoutY="158.0" text="4" textFill="#9a2d5c">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="15.0" layoutY="158.0" text="bed | " />
+                                                <Label layoutX="44.0" layoutY="158.0" text="2" textFill="#0497aa">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font></Label>
+                                                <Label layoutX="51.0" layoutY="158.0" prefHeight="17.0" prefWidth="35.0" text="bath | " />
+                                                <Label layoutX="81.0" layoutY="159.0" prefHeight="17.0" prefWidth="149.0" text="1920 sqft -House for sale" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="203.0" prefWidth="284.0" styleClass="AMancorpaneWhitebg" stylesheets="@cssColors/AncorpaneBc.css">
+                                             <children>
+                                                <ImageView fx:id="ImageInancorpane51" fitHeight="133.0" fitWidth="284.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../../UnitedAreaPhotos/realstatePhotosForFrameBackground/photoframe.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button fx:id="LeftArrowButton141" alignment="BASELINE_CENTER" layoutY="16.0" mnemonicParsing="false" onAction="#ClickActionOnLeftArrow5" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˂" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="threeDotButton41" layoutX="246.0" layoutY="135.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="threedotbutton" stylesheets="@cssColors/threedots.css" text="●●●" textFill="#1c85d4" />
+                                                <Button fx:id="RightArrowButton141" layoutX="211.0" layoutY="15.0" mnemonicParsing="false" onAction="#ClickActionOnRightArrow5" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˃" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button layoutX="222.0" layoutY="160.0" mnemonicParsing="false" onAction="#BuyFlat2" style="-fx-background-color: transparent;" styleClass="buybutton" stylesheets="@cssColors/Buybutton.css" text="Buy">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label fx:id="MoneyButton41" layoutX="9.0" layoutY="139.0" prefHeight="20.0" prefWidth="151.0" text="7000000">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="addr2" layoutX="6.0" layoutY="180.0" prefHeight="17.0" prefWidth="228.0" text="United city, Block C - Dhaka,BD" />
+                                                <Label fx:id="bed3" layoutX="9.0" layoutY="158.0" text="2" textFill="#9a2d5c">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="23.0" layoutY="158.0" text="bed | " />
+                                                <Label layoutX="59.0" layoutY="158.0" prefHeight="17.0" prefWidth="35.0" text="bath | " />
+                                                <Label layoutX="89.0" layoutY="159.0" prefHeight="17.0" prefWidth="149.0" text="1920 sqft -House for sale" />
+                                                <Label layoutX="50.0" layoutY="158.0" text="3" textFill="#0497aa">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="203.0" prefWidth="284.0" styleClass="AMancorpaneWhitebg" stylesheets="@cssColors/AncorpaneBc.css">
+                                             <children>
+                                                <ImageView fx:id="ImageInancorpane4" fitHeight="133.0" fitWidth="284.0" onDragDetected="#BuyFrame4PhotoChanger" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../../UnitedAreaPhotos/BuyPhotos/frame4/photo3.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button fx:id="LeftArrowButton4" alignment="BASELINE_CENTER" layoutY="16.0" mnemonicParsing="false" onAction="#ClickActionOnLeftArrow4" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˂" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="threeDotButton21" layoutX="246.0" layoutY="135.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="threedotbutton" stylesheets="@cssColors/threedots.css" text="●●●" textFill="#1c85d4" />
+                                                <Button fx:id="RightArrowButton4" layoutX="211.0" layoutY="15.0" mnemonicParsing="false" onAction="#ClickActionOnRightArrow4" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˃" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button layoutX="222.0" layoutY="160.0" mnemonicParsing="false" onAction="#BuyFlat3" style="-fx-background-color: transparent;" styleClass="buybutton" stylesheets="@cssColors/Buybutton.css" text="Buy">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label fx:id="MoneyButton21" layoutX="12.0" layoutY="141.0" prefHeight="20.0" prefWidth="214.0" text="7000000">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="addr5" layoutX="12.0" layoutY="179.0" prefHeight="17.0" prefWidth="223.0" text="United city, Block C - Dhaka,BD" />
+                                                <Label fx:id="bed4" layoutX="12.0" layoutY="159.0" prefHeight="17.0" prefWidth="13.0" text="3" textFill="#9a2d5c">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="25.0" layoutY="160.0" text="bed | " />
+                                                <Label layoutX="61.0" layoutY="160.0" prefHeight="17.0" prefWidth="35.0" text="bath | " />
+                                                <Label layoutX="91.0" layoutY="161.0" prefHeight="17.0" prefWidth="149.0" text="1920 sqft -House for sale" />
+                                                <Label layoutX="52.0" layoutY="159.0" text="2" textFill="#0497aa">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="203.0" prefWidth="284.0" styleClass="AMancorpaneWhitebg" stylesheets="@cssColors/AncorpaneBc.css">
+                                             <children>
+                                                <ImageView fx:id="ImageInancorpane5" fitHeight="133.0" fitWidth="284.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../../UnitedAreaPhotos/realstatePhotosForFrameBackground/aaron-huber-s95oB2n9jng-unsplash.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button fx:id="LeftArrowButton14" alignment="BASELINE_CENTER" layoutY="16.0" mnemonicParsing="false" onAction="#ClickActionOnLeftArrow6" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˂" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="threeDotButton4" layoutX="246.0" layoutY="135.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="threedotbutton" stylesheets="@cssColors/threedots.css" text="●●●" textFill="#1c85d4" />
+                                                <Button fx:id="RightArrowButton14" layoutX="211.0" layoutY="15.0" mnemonicParsing="false" onAction="#ClickActionOnRightArrow6" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˃" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button layoutX="222.0" layoutY="160.0" mnemonicParsing="false" onAction="#BuyFlat4" style="-fx-background-color: transparent;" styleClass="buybutton" stylesheets="@cssColors/Buybutton.css" text="Buy">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label fx:id="MoneyButton4" layoutX="7.0" layoutY="139.0" prefHeight="20.0" prefWidth="153.0" text="7000000">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="addr4" layoutX="4.0" layoutY="179.0" prefHeight="17.0" prefWidth="226.0" text="United city, Block C - Dhaka,BD" />
+                                                <Label fx:id="bed5" layoutX="6.0" layoutY="160.0" prefHeight="17.0" prefWidth="13.0" text="1" textFill="#9a2d5c">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="15.0" layoutY="161.0" text="bed | " />
+                                                <Label layoutX="51.0" layoutY="161.0" prefHeight="17.0" prefWidth="35.0" text="bath | " />
+                                                <Label layoutX="81.0" layoutY="162.0" prefHeight="17.0" prefWidth="149.0" text="1920 sqft -House for sale" />
+                                                <Label layoutX="43.0" layoutY="161.0" text="2" textFill="#0497aa">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="203.0" prefWidth="284.0" styleClass="AMancorpaneWhitebg" stylesheets="@cssColors/AncorpaneBc.css">
+                                             <children>
+                                                <ImageView fx:id="ImageInancorpane" fitHeight="133.0" fitWidth="284.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../../UnitedAreaPhotos/BuyPhotos/frame3/IMG-20241225-WA0050.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button fx:id="LeftArrowButton1" alignment="BASELINE_CENTER" layoutY="16.0" mnemonicParsing="false" onAction="#ClickActionOnLeftArrow1" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˂" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="threeDotButton" layoutX="246.0" layoutY="135.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="threedotbutton" stylesheets="@cssColors/threedots.css" text="●●●" textFill="#1c85d4" />
+                                                <Button fx:id="RightArrowButton1" layoutX="211.0" layoutY="15.0" mnemonicParsing="false" onAction="#ClickActionOnRightArrow1" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˃" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button layoutX="222.0" layoutY="160.0" mnemonicParsing="false" onAction="#BuyFlat5" style="-fx-background-color: transparent;" styleClass="buybutton" stylesheets="@cssColors/Buybutton.css" text="Buy">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label fx:id="MoneyButton" layoutX="11.0" layoutY="135.0" prefHeight="20.0" prefWidth="151.0" text="7000000">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="addr3" layoutX="5.0" layoutY="180.0" prefHeight="17.0" prefWidth="231.0" text="United city, Block C - Dhaka,BD" />
+                                                <Label fx:id="bed6" layoutX="9.0" layoutY="156.0" text="3" textFill="#9a2d5c">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="20.0" layoutY="157.0" text="bed | " />
+                                                <Label layoutX="56.0" layoutY="157.0" prefHeight="17.0" prefWidth="35.0" text="bath | " />
+                                                <Label layoutX="86.0" layoutY="158.0" prefHeight="17.0" prefWidth="149.0" text="1920 sqft -House for sale" />
+                                                <Label layoutX="48.0" layoutY="157.0" text="2" textFill="#0497aa">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </FlowPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="RentAnchorpane" layoutX="190.0" layoutY="15.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="437.0" prefWidth="905.0" visible="false">
+                                 <children>
+                                    <FlowPane fx:id="FlowPane1" hgap="20.0" layoutY="8.0" prefHeight="425.0" prefWidth="905.0" vgap="20.0">
+                                       <children>
+                                          <AnchorPane prefHeight="203.0" prefWidth="284.0" styleClass="AMancorpaneWhitebg" stylesheets="@cssColors/AncorpaneBc.css">
+                                             <children>
+                                                <ImageView fx:id="ImageInancorpane311" fitHeight="133.0" fitWidth="284.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../../UnitedAreaPhotos/BuyPhotos/IMG-20241225-WA0044.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button fx:id="leftArrowButtonAnchorpane1_Rent" alignment="BASELINE_CENTER" layoutY="16.0" mnemonicParsing="false" onAction="#ClickActionOnLeftArrow2" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˂" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="threeDotButton31" layoutX="246.0" layoutY="135.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="threedotbutton" stylesheets="@cssColors/threedots.css" text="●●●" textFill="#1c85d4" />
+                                                <Button fx:id="RightArrowButtonAnchorpane1_Rent" layoutX="211.0" layoutY="15.0" mnemonicParsing="false" onAction="#ClickActionOnRightArrow2" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˃" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button layoutX="222.0" layoutY="160.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="buybutton" stylesheets="@cssColors/Buybutton.css" text="Buy">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label fx:id="bed01" layoutX="5.0" layoutY="158.0" prefHeight="17.0" prefWidth="15.0" text="3 " textFill="#9a2d5c">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="14.0" layoutY="159.0" text="bed | " />
+                                                <Label layoutX="43.0" layoutY="158.0" text="2" textFill="#0497aa">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="54.0" layoutY="159.0" prefHeight="17.0" prefWidth="35.0" text="bath | " />
+                                                <Label fx:id="price11" layoutX="7.0" layoutY="136.0" prefHeight="20.0" prefWidth="211.0" text="7000000">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="addr11" layoutX="3.0" layoutY="177.0" prefHeight="17.0" prefWidth="232.0" text="Label" />
+                                                <Label layoutX="84.0" layoutY="159.0" prefHeight="17.0" prefWidth="149.0" text="1920 sqft -House for sale" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="postAnchorpane21" prefHeight="203.0" prefWidth="284.0" styleClass="AMancorpaneWhitebg" stylesheets="@cssColors/AncorpaneBc.css">
+                                             <children>
+                                                <ImageView fx:id="ImageInancorpane212" fitHeight="133.0" fitWidth="284.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../../UnitedAreaPhotos/BuyPhotos/Frame31/IMG-20241227-WA0022.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button fx:id="leftArrowButtonAnchorpane2_Rent" alignment="BASELINE_CENTER" layoutY="16.0" mnemonicParsing="false" onAction="#ClickActionOnLeftArrow3" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˂" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="threeDotButtonInRent2" layoutX="246.0" layoutY="135.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="threedotbutton" stylesheets="@cssColors/threedots.css" text="●●●" textFill="#1c85d4" />
+                                                <Button fx:id="RightArrowButtonAnchorpane2_Rent" layoutX="211.0" layoutY="15.0" mnemonicParsing="false" onAction="#ClickActionOnRightArrow3" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˃" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button layoutX="222.0" layoutY="160.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="buybutton" stylesheets="@cssColors/Buybutton.css" text="Buy">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label fx:id="MoneyLabelInrent2" layoutX="7.0" layoutY="136.0" prefHeight="20.0" prefWidth="207.0" text="7000000">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="addr112" layoutX="7.0" layoutY="177.0" prefHeight="17.0" prefWidth="231.0" text="United city, Block C - Dhaka,BD" />
+                                                <Label fx:id="bed11" layoutX="6.0" layoutY="158.0" text="4" textFill="#9a2d5c">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="15.0" layoutY="158.0" text="bed | " />
+                                                <Label layoutX="44.0" layoutY="158.0" text="2" textFill="#0497aa">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="51.0" layoutY="158.0" prefHeight="17.0" prefWidth="35.0" text="bath | " />
+                                                <Label layoutX="81.0" layoutY="159.0" prefHeight="17.0" prefWidth="149.0" text="1920 sqft -House for sale" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="203.0" prefWidth="284.0" styleClass="AMancorpaneWhitebg" stylesheets="@cssColors/AncorpaneBc.css">
+                                             <children>
+                                                <ImageView fx:id="ImageInancorpane511" fitHeight="133.0" fitWidth="284.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../../UnitedAreaPhotos/realstatePhotosForFrameBackground/photoframe.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button fx:id="leftArrowButtonAnchorpane3_Rent" alignment="BASELINE_CENTER" layoutY="16.0" mnemonicParsing="false" onAction="#ClickActionOnLeftArrow5" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˂" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="threeDotButton411" layoutX="246.0" layoutY="135.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="threedotbutton" stylesheets="@cssColors/threedots.css" text="●●●" textFill="#1c85d4" />
+                                                <Button fx:id="RightArrowButtonAnchorpane3_Rent" layoutX="211.0" layoutY="15.0" mnemonicParsing="false" onAction="#ClickActionOnRightArrow5" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˃" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button layoutX="222.0" layoutY="160.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="buybutton" stylesheets="@cssColors/Buybutton.css" text="Buy">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label fx:id="MoneyButton411" layoutX="9.0" layoutY="139.0" prefHeight="20.0" prefWidth="151.0" text="7000000">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="addr21" layoutX="6.0" layoutY="180.0" prefHeight="17.0" prefWidth="228.0" text="United city, Block C - Dhaka,BD" />
+                                                <Label fx:id="bed31" layoutX="9.0" layoutY="158.0" text="2" textFill="#9a2d5c">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="23.0" layoutY="158.0" text="bed | " />
+                                                <Label layoutX="59.0" layoutY="158.0" prefHeight="17.0" prefWidth="35.0" text="bath | " />
+                                                <Label layoutX="89.0" layoutY="159.0" prefHeight="17.0" prefWidth="149.0" text="1920 sqft -House for sale" />
+                                                <Label layoutX="50.0" layoutY="158.0" text="3" textFill="#0497aa">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="203.0" prefWidth="284.0" styleClass="AMancorpaneWhitebg" stylesheets="@cssColors/AncorpaneBc.css">
+                                             <children>
+                                                <ImageView fx:id="ImageInancorpane412" fitHeight="133.0" fitWidth="284.0" onDragDetected="#BuyFrame4PhotoChanger" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../../UnitedAreaPhotos/BuyPhotos/frame4/photo3.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button fx:id="leftArrowButtonAnchorpane4_Rent" alignment="BASELINE_CENTER" layoutY="16.0" mnemonicParsing="false" onAction="#ClickActionOnLeftArrow4" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˂" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="threeDotButton211" layoutX="246.0" layoutY="135.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="threedotbutton" stylesheets="@cssColors/threedots.css" text="●●●" textFill="#1c85d4" />
+                                                <Button fx:id="RightArrowButtonAnchorpane4_Rent" layoutX="211.0" layoutY="15.0" mnemonicParsing="false" onAction="#ClickActionOnRightArrow4" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˃" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button layoutX="222.0" layoutY="160.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="buybutton" stylesheets="@cssColors/Buybutton.css" text="Buy">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label fx:id="MoneyButton211" layoutX="12.0" layoutY="141.0" prefHeight="20.0" prefWidth="214.0" text="7000000">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="addr51" layoutX="12.0" layoutY="179.0" prefHeight="17.0" prefWidth="223.0" text="United city, Block C - Dhaka,BD" />
+                                                <Label fx:id="bed41" layoutX="12.0" layoutY="159.0" prefHeight="17.0" prefWidth="13.0" text="3" textFill="#9a2d5c">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="25.0" layoutY="160.0" text="bed | " />
+                                                <Label layoutX="61.0" layoutY="160.0" prefHeight="17.0" prefWidth="35.0" text="bath | " />
+                                                <Label layoutX="91.0" layoutY="161.0" prefHeight="17.0" prefWidth="149.0" text="1920 sqft -House for sale" />
+                                                <Label layoutX="52.0" layoutY="159.0" text="2" textFill="#0497aa">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="203.0" prefWidth="284.0" styleClass="AMancorpaneWhitebg" stylesheets="@cssColors/AncorpaneBc.css">
+                                             <children>
+                                                <ImageView fx:id="ImageInancorpane513" fitHeight="133.0" fitWidth="284.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../../UnitedAreaPhotos/realstatePhotosForFrameBackground/aaron-huber-s95oB2n9jng-unsplash.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button fx:id="leftArrowButtonAnchorpane5_Rent" alignment="BASELINE_CENTER" layoutY="16.0" mnemonicParsing="false" onAction="#ClickActionOnLeftArrow6" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˂" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="threeDotButtonInRent5" layoutX="246.0" layoutY="135.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="threedotbutton" stylesheets="@cssColors/threedots.css" text="●●●" textFill="#1c85d4" />
+                                                <Button fx:id="RightArrowButtonAnchorpane5_Rent" layoutX="211.0" layoutY="15.0" mnemonicParsing="false" onAction="#ClickActionOnRightArrow6" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˃" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button layoutX="222.0" layoutY="160.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="buybutton" stylesheets="@cssColors/Buybutton.css" text="Buy">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label fx:id="MoneyLabelInrent5" layoutX="7.0" layoutY="139.0" prefHeight="20.0" prefWidth="153.0" text="7000000">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="addr41" layoutX="4.0" layoutY="179.0" prefHeight="17.0" prefWidth="226.0" text="United city, Block C - Dhaka,BD" />
+                                                <Label fx:id="bed51" layoutX="6.0" layoutY="160.0" prefHeight="17.0" prefWidth="13.0" text="1" textFill="#9a2d5c">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="15.0" layoutY="161.0" text="bed | " />
+                                                <Label layoutX="51.0" layoutY="161.0" prefHeight="17.0" prefWidth="35.0" text="bath | " />
+                                                <Label layoutX="81.0" layoutY="162.0" prefHeight="17.0" prefWidth="149.0" text="1920 sqft -House for sale" />
+                                                <Label layoutX="43.0" layoutY="161.0" text="2" textFill="#0497aa">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="203.0" prefWidth="284.0" styleClass="AMancorpaneWhitebg" stylesheets="@cssColors/AncorpaneBc.css">
+                                             <children>
+                                                <ImageView fx:id="ImageInancorpane19" fitHeight="133.0" fitWidth="284.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../../../UnitedAreaPhotos/BuyPhotos/frame3/IMG-20241225-WA0050.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button fx:id="leftArrowButtonAnchorpane6_Rent" alignment="BASELINE_CENTER" layoutY="16.0" mnemonicParsing="false" onAction="#ClickActionOnLeftArrow1" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˂" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="threeDotButton1" layoutX="246.0" layoutY="135.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="threedotbutton" stylesheets="@cssColors/threedots.css" text="●●●" textFill="#1c85d4" />
+                                                <Button fx:id="RightArrowButtonAnchorpane6_Rent" layoutX="211.0" layoutY="15.0" mnemonicParsing="false" onAction="#ClickActionOnRightArrow1" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˃" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button layoutX="222.0" layoutY="160.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="buybutton" stylesheets="@cssColors/Buybutton.css" text="Buy">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label layoutX="11.0" layoutY="135.0" prefHeight="20.0" prefWidth="151.0" text="7000000">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="addr31" layoutX="5.0" layoutY="180.0" prefHeight="17.0" prefWidth="231.0" text="United city, Block C - Dhaka,BD" />
+                                                <Label fx:id="bed61" layoutX="9.0" layoutY="156.0" text="3" textFill="#9a2d5c">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="20.0" layoutY="157.0" text="bed | " />
+                                                <Label layoutX="56.0" layoutY="157.0" prefHeight="17.0" prefWidth="35.0" text="bath | " />
+                                                <Label layoutX="86.0" layoutY="158.0" prefHeight="17.0" prefWidth="149.0" text="1920 sqft -House for sale" />
+                                                <Label layoutX="48.0" layoutY="157.0" text="2" textFill="#0497aa">
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </FlowPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="HomePafeAnchorpane" prefHeight="449.0" prefWidth="1100.0" visible="false">
+                           <children>
+                              <ScrollPane hbarPolicy="NEVER" prefHeight="451.0" prefWidth="1100.0" vbarPolicy="ALWAYS">
+                                 <content>
+                                    <AnchorPane prefHeight="1618.0" prefWidth="1118.0">
+                                       <children>
+                                          <AnchorPane fx:id="Anchorpanevisible1" prefHeight="450.6666666666667" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <ImageView fx:id="imageView1" fitHeight="450.0" fitWidth="1108.0" layoutX="-8.0" pickOnBounds="true" AnchorPane.bottomAnchor="436.0" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="0.0">
+                                                   <image>
+                                                      <Image url="@../../../UnitedAreaPhotos/352.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button fx:id="LeftArrowButton" layoutY="168.0" mnemonicParsing="false" onAction="#ClickActionOnLeftArrow" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˂" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+                                                   <font>
+                                                      <Font size="48.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="RightArrowButton" layoutX="1007.0" layoutY="172.0" mnemonicParsing="false" onAction="#ClickActionOnRightArrow" prefHeight="102.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="˃" textFill="WHITE" AnchorPane.rightAnchor="0.0">
+                                                   <font>
+                                                      <Font size="48.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

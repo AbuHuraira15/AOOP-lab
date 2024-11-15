@@ -1,0 +1,47 @@
+.main-pane {
+    -fx-background-color: linear-gradient(to bottom, #3b5998, #192f6a);
+}
+
+.title-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 4, 0.5, 1, 1);
+}
+
+.field-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f1f1f1;
+}
+
+.input-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #3b5998;
+    -fx-border-radius: 4;
+    -fx-padding: 4;
+    -fx-font-size: 14px;
+}
+
+.primary-button {
+    -fx-background-color: #3b5998;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-padding: 8 16;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0.5, 1, 1);
+}
+
+.primary-button:hover {
+    -fx-background-color: #4c70ba;
+}
+
+.primary-button:pressed {
+    -fx-background-color: #2a4887;
+}
+
+.error-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #ff4c4c;
+    -fx-font-style: italic;
+}
